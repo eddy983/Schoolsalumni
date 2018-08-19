@@ -1,0 +1,62 @@
+.projects {
+  margin: 5% 0 4% 0;
+
+  &__header {
+    @include header-margin;
+
+    &__line {
+      @include header-line;
+    }
+
+    &__title {
+      background: $color-white;
+      padding: 0 2.5%;
+    }
+  }
+
+  &__boxes {
+    @include grid;
+    grid-gap: 2.5%;
+    grid-row-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 36rem 36rem;
+    margin: 0 6%;
+
+    @include respond(tab-land) {
+      grid-template-rows: 30rem 30rem;
+    }
+  }
+
+  &__box {
+    position: relative;
+
+    &__image {
+      border: 1px solid #afafaf;
+      border-radius: 4px;
+      box-shadow: inset 0 0 14px rgba(0, 0, 0, 0.5);
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    &__report {
+      background-color: rgba(0, 0, 0, 0.56);
+      border-radius: 4px;
+      display: inline-flex;
+      left: 4%;
+      padding: 0.5rem 0.9rem;
+      position: absolute;
+      top: 4%;
+    }
+
+    &__all {
+      display: block;
+      margin: 2% 0;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

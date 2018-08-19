@@ -1,0 +1,55 @@
+.btn {
+  background-color: $color-blue;
+  border: none;
+  border-radius: 3px;
+  color: $color-white;
+  outline: 0; 
+
+  &:hover {
+    background-color: $color-orange; 
+    cursor: pointer;
+  }
+
+  &__donate {
+    font-size: 1.6rem;
+    padding: 0.8rem 2.5rem;
+  }
+
+  &__header {
+    border-radius: 5px;
+    font-size: 4vh;
+    font-weight: 600;
+    padding: 1.5rem 3rem;
+
+    @include respond(tab-land) {
+      font-size: 4.5rem;
+    }
+
+    @include respond(tab-port) {
+      font-size: 3.5rem;
+    }
+  }
+
+  &__services{
+    display: block;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: auto;
+    padding: 1rem 2rem;
+  }
+
+  &__dollar {
+    background-color: #E5E5E5;
+    color: $color-black; 
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem; 
+  }
+
+  &__small-donate {
+    border-radius: 4px;
+    display: block;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+  }
+}

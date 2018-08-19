@@ -1,0 +1,30 @@
+.center-text { text-align: center; } 
+
+.about-margin { margin: 0 18%; }
+
+.services-margin {
+  &-header {
+    margin-bottom: 1.5%;
+  }
+
+  &-title {
+    margin: 14% 0 2% 0;
+
+    @include respond(tab-land) {
+      margin: 6% 0 2% 0;
+    }
+  }
+
+  &-paragraph {
+    margin: 3% 0;
+  }
+}
+
+.report-margin { margin-right: 3%; }
+
+.report-header-margin { margin-bottom: 1%; }
+
+.donate-header-margin { margin-bottom: 1.1%;}
+
+.copyright-margin { margin: 0 0.4%;}
+

@@ -1,0 +1,11 @@
+.partners {
+  margin: 6% 0;
+  
+  &__header {
+    @include header-margin;
+
+    &__line {
+      @include header-line;
+    }
+  }
+}

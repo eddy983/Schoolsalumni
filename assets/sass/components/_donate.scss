@@ -1,0 +1,26 @@
+.donate {
+  &__box {
+    background-image: url(../../../assets/img/donate-bg.jpg);
+    display: grid;
+    justify-items: center;
+    padding: 5% 0;
+
+    &__amount {
+      margin-bottom: 2%;  
+    }
+
+    &__input {
+      height: 2.8rem;
+      outline: 0;
+      width: 33rem;
+    }
+
+    &__textarea {
+      outline: 0;
+      width: 36rem;
+    }
+  }
+
+
+
+}
