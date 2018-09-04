@@ -1,7 +1,8 @@
 .donate {
   &__box {
     background-image: url(../../../assets/img/donate-bg.jpg);
-    //background: url(../../../assets/img/donate-bg.jpg);   
+    //background: url(../../../assets/img/donate-bg.jpg); 
+    //linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));  
     background-position: center;  
     background-size: cover;   
     display: -ms-grid;
@@ -16,7 +17,7 @@
     }
 
     &__amount {
-      margin-bottom: 2%;    
+      margin-bottom: 2%;
     }
 
     &__input {
