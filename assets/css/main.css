@@ -252,7 +252,8 @@ body {
         padding: 1rem 2rem; } }
 
 .donate__box {
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../../assets/img/donate-bg.jpg);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
+  background: url(../../../assets/img/donate-bg.jpg);
   background-position: center;
   background-size: cover;
   display: -ms-grid;
