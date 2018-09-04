@@ -2,7 +2,7 @@
   position: relative;
 
   &__background {
-    background-color: rgba(0, 0, 0, 0.45); 
+    background-color: rgba(0, 0, 0, 0.45);
     height: $image-height;
     width: 100%;
     position: absolute;
@@ -14,13 +14,16 @@
     @include respond(tab-land) {
       height: $tab-l-height;
     }
+
+    @include respond(l-phone) {
+      height: $l-phone-height;
+    }
   }
 
   &__image {
-
     &__img {
       height: $image-height;
-      object-fit: cover; 
+      object-fit: cover;
       width: 100%;
 
       @include respond(s-laptop) {
@@ -30,29 +33,52 @@
       @include respond(tab-land) {
         height: $tab-l-height;
       }
+
+      @include respond(l-phone) {
+        height: $l-phone-height;
+      }
     }
   }
-  
+
   &__text {
     color: $color-white;
-    display: inline-table;
+    display: inline-table; 
     font-size: 8.5vh;
-    font-weight: 500; 
+    font-weight: 500;
     left: 50%;
     position: absolute;
     top: 35%;
     transform: translate(-50%, -50%);
 
-    @include respond(s-laptop) {
+    @include respond(s-laptop) {   
       font-size: 6.5vh;
     }
 
     @include respond(tab-land) {
       font-size: 3.5vh;
     }
+
+    @include respond(f-hxd) {
+      font-size: 3.5vh;
+    }
+    
+    @include respond(mic-l) {
+      font-size: 6.5vh;
+    }
+
+    @include respond(l-phone) {
+      font-size: 3vh;
+    }
   }
 
   &__button {
-    @include position;
+    left: 50%;
+    position: absolute;
+    top: 52%;
+    transform: translate(-50%, -50%);
+
+    @include respond(mic-l) {
+      top: 66%;
+    }
   }
 }

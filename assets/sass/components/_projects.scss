@@ -9,7 +9,7 @@
     }
 
     &__title {
-      background: $color-white;
+      background: $color-white; 
       padding: 0 2.5%;
     }
   }
@@ -25,6 +25,20 @@
     @include respond(tab-land) {
       grid-template-rows: 30rem 30rem;
     }
+
+    @include respond(f-hxd) {
+      grid-template-rows: 24rem 24rem;
+    }
+
+    @include respond(l-phone) {
+      grid-template-rows: 40rem 40rem;
+    }
+
+    @include respond(l-phone) {
+      grid-template-columns: 1fr;
+    }
+
+    
   }
 
   &__box {

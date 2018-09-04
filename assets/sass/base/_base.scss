@@ -3,13 +3,22 @@
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: inherit; 
 }
 
 html {
-  /* To get the pecentage 10px(wanted font) / 16px(root font) = 0.625
-  0.625 x 100 = 62.5% */
+  /**
+  *? To get the pecentage 10px(wanted font) / 16px(root font) = 0.625, 0.625 x 100 = 62.5% 
+   */
   font-size: 62.5%;
+
+  @include respond(f-hxd) {
+    font-size: 43.75%; // 7px
+  }
+
+  @include respond(l-phone) {
+    font-size: 37.5%; // 7px
+  }
 }
 
 body {

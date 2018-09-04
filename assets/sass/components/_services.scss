@@ -2,22 +2,34 @@
   background-image: linear-gradient(-127deg, $color-white 29%, #E5A771 24%, #E4AE48 108%);    
   background-size: cover;
   margin: 2% 0;
-  padding: 1% 0 1.8% 0;  
+  padding: 1% 0 1.8% 0;
+
+  @include respond (l-phone) {
+    background-image: linear-gradient(to left, #E5A771 24%, #E4AE48);     
+  }
 
   &__boxes {
     @include grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 1fr); 
     margin: 0 5%;
     grid-gap: 2%;
+
+    @include respond(mic-l) {
+      grid-template-columns: repeat(1, 1fr); 
+    }
   }
 
   &__box {
     @include grid;
     background-color: $color-white; 
     border: 1px solid #e3e3e3;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.32);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.32); 
     justify-items: center;
     padding: 2rem;
+
+    @include respond(mic-l) {
+      margin-bottom: 3%;
+    }
 
     &__icon {
       height: 9.7rem;
@@ -25,6 +37,10 @@
 
       @include respond(tab-land) {
         height: 7rem;
+      }
+
+      @include respond(mic-l) { 
+        height: 10rem;
       }
     }
   }

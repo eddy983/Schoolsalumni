@@ -21,13 +21,14 @@
     font-weight: 600;
     padding: 1.5rem 3rem;
 
-    @include respond(tab-land) {
+    @include respond(tab-land) { 
       font-size: 4.5rem;
     }
 
-    @include respond(tab-port) {
-      font-size: 3.5rem;
+    @include respond(mic-l) {
+      font-size: 2.5rem;  
     }
+
   }
 
   &__services{
@@ -36,6 +37,10 @@
     font-weight: 500;
     margin: auto;
     padding: 1rem 2rem;
+
+    @include respond(mic-l) {
+      font-size: 3.8rem;
+    }
   }
 
   &__dollar {
@@ -50,6 +55,12 @@
     display: block;
     font-size: 2rem;
     font-weight: 600;
-    padding: 1rem 2rem;
+    margin-top: 10%;
+    padding: 1rem 4rem;
+
+    @include respond(mic-l) {
+      font-size: 3rem;
+      padding: 1rem 2rem;
+    }
   }
 }

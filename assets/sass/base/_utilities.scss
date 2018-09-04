@@ -1,10 +1,18 @@
-.center-text { text-align: center; } 
+.center-text {
+  text-align: center;
+}
 
-.about-margin { margin: 0 18%; }
+.about-margin {
+  margin: 0 18%;
+
+  @include respond(mic-l) {
+    margin: 0 2%;
+  }
+}
 
 .services-margin {
   &-header {
-    margin-bottom: 1.5%;
+    margin-bottom: 1.5%; 
   }
 
   &-title {
@@ -12,19 +20,42 @@
 
     @include respond(tab-land) {
       margin: 6% 0 2% 0;
+
+      @include respond(mic-l) {
+        margin: 2% 0;
+      }
     }
   }
 
   &-paragraph {
     margin: 3% 0;
+
+    @include respond(mic-l) {
+      margin: 2% 0;
+    }
   }
 }
 
-.report-margin { margin-right: 3%; }
+.report-margin {
+  margin-right: 3%;
+}
 
-.report-header-margin { margin-bottom: 1%; }
+.report-header-margin {
+  margin-bottom: 1%;
+}
 
-.donate-header-margin { margin-bottom: 1.1%;}
+.donate-header-margin {
+  margin-bottom: 1.1%;
+}
 
-.copyright-margin { margin: 0 0.4%;}
+.donate-header-padding {
+  padding: 0 14%;
 
+  @include respond(mic-l) {
+    padding: 0 4%;
+  }
+}
+
+.copyright-margin {
+  margin: 0 0.4%;
+}

@@ -45,9 +45,16 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
-  /* To get the pecentage 10px(wanted font) / 16px(root font) = 0.625
-  0.625 x 100 = 62.5% */
+  /**
+  *? To get the pecentage 10px(wanted font) / 16px(root font) = 0.625, 0.625 x 100 = 62.5% 
+   */
   font-size: 62.5%; }
+  @media (max-width: 50em) {
+    html {
+      font-size: 43.75%; } }
+  @media (max-width: 26.5625em) {
+    html {
+      font-size: 37.5%; } }
 
 body {
   box-sizing: border-box; }
@@ -64,18 +71,37 @@ body {
   font-weight: 500;
   letter-spacing: 0.09rem; }
 
+@media (max-width: 40em) {
+  .about-paragraph {
+    font-size: 2.3rem; } }
+
 .services-font {
   font-size: 1.8rem; }
   @media (max-width: 64em) {
     .services-font {
       font-size: 1.6rem; } }
+  @media (max-width: 50em) {
+    .services-font {
+      font-size: 2rem; } }
+  @media (max-width: 40em) {
+    .services-font {
+      font-size: 2.3rem; } }
   .services-font-header {
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 3px; }
+    @media (max-width: 40em) {
+      .services-font-header {
+        font-size: 3rem; } }
   .services-font-title {
     font-weight: 600;
     letter-spacing: 0.01rem; }
+    @media (max-width: 50em) {
+      .services-font-title {
+        font-size: 2rem; } }
+    @media (max-width: 40em) {
+      .services-font-title {
+        font-size: 2.3rem; } }
 
 .projects-font-header {
   font-size: 3rem;
@@ -122,6 +148,9 @@ body {
 
 .about-margin {
   margin: 0 18%; }
+  @media (max-width: 40em) {
+    .about-margin {
+      margin: 0 2%; } }
 
 .services-margin-header {
   margin-bottom: 1.5%; }
@@ -131,9 +160,15 @@ body {
   @media (max-width: 64em) {
     .services-margin-title {
       margin: 6% 0 2% 0; } }
+  @media (max-width: 64em) and (max-width: 40em) {
+    .services-margin-title {
+      margin: 2% 0; } }
 
 .services-margin-paragraph {
   margin: 3% 0; }
+  @media (max-width: 40em) {
+    .services-margin-paragraph {
+      margin: 2% 0; } }
 
 .report-margin {
   margin-right: 3%; }
@@ -143,6 +178,12 @@ body {
 
 .donate-header-margin {
   margin-bottom: 1.1%; }
+
+.donate-header-padding {
+  padding: 0 14%; }
+  @media (max-width: 40em) {
+    .donate-header-padding {
+      padding: 0 4%; } }
 
 .copyright-margin {
   margin: 0 0.4%; }
@@ -170,15 +211,18 @@ body {
     @media (max-width: 64em) {
       .btn__header {
         font-size: 4.5rem; } }
-    @media (max-width: 48em) {
+    @media (max-width: 40em) {
       .btn__header {
-        font-size: 3.5rem; } }
+        font-size: 2.5rem; } }
   .btn__services {
     display: block;
     font-size: 1.8rem;
     font-weight: 500;
     margin: auto;
     padding: 1rem 2rem; }
+    @media (max-width: 40em) {
+      .btn__services {
+        font-size: 3.8rem; } }
   .btn__dollar {
     background-color: #E5E5E5;
     color: #000;
@@ -189,19 +233,34 @@ body {
     display: block;
     font-size: 2rem;
     font-weight: 600;
-    padding: 1rem 2rem; }
+    margin-top: 10%;
+    padding: 1rem 4rem; }
+    @media (max-width: 40em) {
+      .btn__small-donate {
+        font-size: 3rem;
+        padding: 1rem 2rem; } }
 
 .donate__box {
-  background-image: url(../../../assets/img/donate-bg.jpg);
+  background: url(../../../assets/img/donate-bg.jpg);
+  background-position: center;
+  background-size: cover;
   display: grid;
   justify-items: center;
   padding: 5% 0; }
+  @media (max-width: 40em) {
+    .donate__box {
+      justify-items: start;
+      padding: 5% 3%; } }
   .donate__box__amount {
     margin-bottom: 2%; }
   .donate__box__input {
     height: 2.8rem;
     outline: 0;
     width: 33rem; }
+    @media (max-width: 40em) {
+      .donate__box__input {
+        border-radius: 1rem;
+        height: 4.4rem; } }
   .donate__box__textarea {
     outline: 0;
     width: 36rem; }
@@ -220,7 +279,7 @@ body {
     .nav-bar {
       display: grid;
       justify-items: center; } }
-  @media (max-width: 48em) {
+  @media (max-width: 50em) {
     .nav-bar {
       display: none; } }
   .nav-bar__list {
@@ -282,7 +341,7 @@ body {
     content: "";
     display: table;
     clear: both; }
-  @media (max-width: 48em) {
+  @media (max-width: 50em) {
     .nav {
       display: block; } }
   .nav__burger {
@@ -365,6 +424,15 @@ body {
     @media (max-width: 64em) {
       .projects__boxes {
         grid-template-rows: 30rem 30rem; } }
+    @media (max-width: 50em) {
+      .projects__boxes {
+        grid-template-rows: 24rem 24rem; } }
+    @media (max-width: 26.5625em) {
+      .projects__boxes {
+        grid-template-rows: 40rem 40rem; } }
+    @media (max-width: 26.5625em) {
+      .projects__boxes {
+        grid-template-columns: 1fr; } }
   .projects__box {
     position: relative; }
     .projects__box__image {
@@ -456,11 +524,17 @@ a {
   background-size: cover;
   margin: 2% 0;
   padding: 1% 0 1.8% 0; }
+  @media (max-width: 26.5625em) {
+    .services {
+      background-image: linear-gradient(to left, #E5A771 24%, #E4AE48); } }
   .services__boxes {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 0 5%;
     grid-gap: 2%; }
+    @media (max-width: 40em) {
+      .services__boxes {
+        grid-template-columns: repeat(1, 1fr); } }
   .services__box {
     display: grid;
     background-color: #fff;
@@ -468,12 +542,18 @@ a {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.32);
     justify-items: center;
     padding: 2rem; }
+    @media (max-width: 40em) {
+      .services__box {
+        margin-bottom: 3%; } }
     .services__box__icon {
       height: 9.7rem;
       margin: 5% 0; }
       @media (max-width: 64em) {
         .services__box__icon {
           height: 7rem; } }
+      @media (max-width: 40em) {
+        .services__box__icon {
+          height: 10rem; } }
   .services__button {
     margin-top: 4%; }
 
@@ -501,6 +581,9 @@ a {
     @media (max-width: 64em) {
       .header__background {
         height: 45vh; } }
+    @media (max-width: 26.5625em) {
+      .header__background {
+        height: 24vh; } }
   .header__image__img {
     height: 90vh;
     object-fit: cover;
@@ -511,6 +594,9 @@ a {
     @media (max-width: 64em) {
       .header__image__img {
         height: 45vh; } }
+    @media (max-width: 26.5625em) {
+      .header__image__img {
+        height: 24vh; } }
   .header__text {
     color: #fff;
     display: inline-table;
@@ -526,8 +612,20 @@ a {
     @media (max-width: 64em) {
       .header__text {
         font-size: 3.5vh; } }
+    @media (max-width: 50em) {
+      .header__text {
+        font-size: 3.5vh; } }
+    @media (max-width: 40em) {
+      .header__text {
+        font-size: 6.5vh; } }
+    @media (max-width: 26.5625em) {
+      .header__text {
+        font-size: 3vh; } }
   .header__button {
     left: 50%;
     position: absolute;
-    top: 50%;
+    top: 52%;
     transform: translate(-50%, -50%); }
+    @media (max-width: 40em) {
+      .header__button {
+        top: 66%; } }

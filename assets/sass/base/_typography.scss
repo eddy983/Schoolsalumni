@@ -12,6 +12,12 @@ body {
   letter-spacing: 0.09rem;
 }
 
+.about-paragraph {
+  @include respond(mic-l) {
+    font-size: 2.3rem;
+  }
+}
+
 .services-font {
   font-size: 1.8rem;
 
@@ -19,15 +25,35 @@ body {
     font-size: 1.6rem; 
   }
 
+  @include respond(f-hxd) {
+    font-size: 2rem; 
+  }
+
+  @include respond(mic-l) {
+    font-size: 2.3rem;  
+  }
+
   &-header {
     font-size: 2rem;
     font-weight: 500;
     letter-spacing: 3px;
+    
+    @include respond(mic-l) { 
+      font-size: 3rem;
+    }
   }
 
   &-title {
     font-weight: 600;
     letter-spacing: 0.01rem;
+
+    @include respond(f-hxd) {
+      font-size: 2rem;  
+    }
+
+    @include respond(mic-l) {
+      font-size: 2.3rem;  
+    }
   }
 }
 
