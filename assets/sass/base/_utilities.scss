@@ -6,6 +6,13 @@
   margin: 0 18%;
 
   @include respond(mic-l) {
+    margin: 0 2%;  
+  }
+}
+.about-margin-first {
+  margin: 0% 18% 2% 18%;   
+
+  @include respond(mic-l) {
     margin: 0 2%;
   }
 }
