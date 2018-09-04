@@ -9,8 +9,23 @@
     &__icon {
       height: 3rem;
       
-      &:not(:first-child) {
+      &:not(:first-child) { 
         margin-left: 3%;
+      }
+    }
+  }
+
+  &__contact {
+    margin: 0 0.5%;
+
+    @include respond(mic-l) {
+      margin: 0 1.5%;
+    }
+    &:not(:last-child) {
+      margin-right: 0.5%;
+
+      @include respond(mic-l) {
+        margin-right: 1.5%;
       }
     }
   }

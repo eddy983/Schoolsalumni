@@ -252,8 +252,7 @@ body {
         padding: 1rem 2rem; } }
 
 .donate__box {
-  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));
-  background: url(../../../assets/img/donate-bg.jpg);
+  background-image: linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../../assets/img/donate-bg.jpg);
   background-position: center;
   background-size: cover;
   display: -ms-grid;
@@ -585,6 +584,16 @@ a {
       height: 3rem; }
       .footer__icons__icon:not(:first-child) {
         margin-left: 3%; }
+  .footer__contact {
+    margin: 0 0.5%; }
+    @media (max-width: 40em) {
+      .footer__contact {
+        margin: 0 1.5%; } }
+    .footer__contact:not(:last-child) {
+      margin-right: 0.5%; }
+      @media (max-width: 40em) {
+        .footer__contact:not(:last-child) {
+          margin-right: 1.5%; } }
 
 .header {
   position: relative; }
