@@ -1,10 +1,10 @@
 .donate {
   &__box {
-    background: url(../../../assets/img/donate-bg.jpg);   
-    //background: url(../../../assets/img/donate-bg.jpg); 
+    //background: url(../../../assets/img/donate-bg.jpg);   
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(../../../assets/img/donate-bg.jpg); 
     //linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));  
-    //background-position: center;  
-    //background-size: cover;   
+    background-position: center;   
+    background-size: cover;   
     display: -ms-grid;
     display: grid;
     justify-items: center;
