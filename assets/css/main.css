@@ -253,8 +253,6 @@ body {
 
 .donate__box {
   background: url(../../../assets/img/donate-bg.jpg);
-  background-position: center;
-  background-size: cover;
   display: -ms-grid;
   display: grid;
   justify-items: center;
