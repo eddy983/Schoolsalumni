@@ -9,16 +9,18 @@ body {
 .about-title {
   font-size: 3.5rem;
   font-weight: 500;
-  letter-spacing: 0.09rem;
+  letter-spacing: 0.09rem; 
 
   @include respond(mic-l) {
     font-size: 2.3rem;
-  }
+    font-weight: 600;
+  } 
 }
 
 .about-paragraph {
   @include respond(mic-l) {
     font-size: 2.1rem;
+    line-height: 1.3;
   }
 }
 
