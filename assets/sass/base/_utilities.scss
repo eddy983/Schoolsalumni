@@ -2,11 +2,15 @@
   text-align: center;
 }
 
+.justify-text {
+  text-align: justify;
+}
+
 .about-margin {
   margin: 0 18%;
 
   @include respond(mic-l) {
-    margin: 0 2%;  
+    margin: 0 6%;  
   }
 }
 .about-margin-first {
@@ -52,7 +56,11 @@
 }
 
 .donate-header-margin {
-  margin-bottom: 1.1%;
+  margin: 0 0 1.1% 0;
+
+  @include respond(mic-l) {
+    margin: 4% 0 5% 0;
+  }
 }
 
 .donate-header-padding {

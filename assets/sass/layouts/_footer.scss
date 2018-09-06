@@ -8,6 +8,10 @@
 
     &__icon {
       height: 3rem;
+
+      @include respond(mic-l) {
+        height: 5rem;
+      }
       
       &:not(:first-child) { 
         margin-left: 3%;

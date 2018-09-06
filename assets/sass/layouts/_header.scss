@@ -47,7 +47,7 @@
     font-weight: 500;
     left: 50%;
     position: absolute;
-    top: 35%;
+    top: 50%;
     transform: translate(-50%, -50%);
 
     @include respond(s-laptop) {   
@@ -67,7 +67,7 @@
     }
 
     @include respond(l-phone) {
-      font-size: 3vh;
+      font-size: 2.5vh;
     }
   }
 

@@ -4,8 +4,11 @@
   margin: 2% 0;
   padding: 1% 0 1.8% 0;
 
-  @include respond (l-phone) {
-    background-image: linear-gradient(to left, #E5A771 24%, #E4AE48);       
+
+
+  @include respond (mic-l) {
+    background-image: linear-gradient(to left, #E5A771 24%, #E4AE48); 
+    margin: 10% 0;      
   }
 
   &__boxes {

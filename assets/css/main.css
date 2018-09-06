@@ -70,10 +70,13 @@ body {
   font-size: 3.5rem;
   font-weight: 500;
   letter-spacing: 0.09rem; }
+  @media (max-width: 40em) {
+    .about-title {
+      font-size: 2.3rem; } }
 
 @media (max-width: 40em) {
   .about-paragraph {
-    font-size: 2.3rem; } }
+    font-size: 2.1rem; } }
 
 .services-font {
   font-size: 1.8rem; }
@@ -151,11 +154,14 @@ body {
 .center-text {
   text-align: center; }
 
+.justify-text {
+  text-align: justify; }
+
 .about-margin {
   margin: 0 18%; }
   @media (max-width: 40em) {
     .about-margin {
-      margin: 0 2%; } }
+      margin: 0 6%; } }
 
 .about-margin-first {
   margin: 0% 18% 2% 18%; }
@@ -188,7 +194,10 @@ body {
   margin-bottom: 1%; }
 
 .donate-header-margin {
-  margin-bottom: 1.1%; }
+  margin: 0 0 1.1% 0; }
+  @media (max-width: 40em) {
+    .donate-header-margin {
+      margin: 4% 0 5% 0; } }
 
 .donate-header-padding {
   padding: 0 14%; }
@@ -262,7 +271,7 @@ body {
   -ms-grid-rows: 1fr 1fr; }
   @media (max-width: 40em) {
     .donate__box {
-      justify-items: start;
+      justify-items: center;
       padding: 5% 3%; } }
   .donate__box__amount {
     margin-bottom: 2%; }
@@ -539,9 +548,10 @@ a {
   background-size: cover;
   margin: 2% 0;
   padding: 1% 0 1.8% 0; }
-  @media (max-width: 26.5625em) {
+  @media (max-width: 40em) {
     .services {
-      background-image: linear-gradient(to left, #E5A771 24%, #E4AE48); } }
+      background-image: linear-gradient(to left, #E5A771 24%, #E4AE48);
+      margin: 10% 0; } }
   .services__boxes {
     display: -ms-grid;
     display: grid;
@@ -582,6 +592,9 @@ a {
     width: 100%; }
     .footer__icons__icon {
       height: 3rem; }
+      @media (max-width: 40em) {
+        .footer__icons__icon {
+          height: 5rem; } }
       .footer__icons__icon:not(:first-child) {
         margin-left: 3%; }
   .footer__contact {
@@ -631,7 +644,7 @@ a {
     font-weight: 500;
     left: 50%;
     position: absolute;
-    top: 35%;
+    top: 50%;
     transform: translate(-50%, -50%); }
     @media (max-width: 80em) {
       .header__text {
@@ -647,7 +660,7 @@ a {
         font-size: 6.5vh; } }
     @media (max-width: 26.5625em) {
       .header__text {
-        font-size: 3vh; } }
+        font-size: 2.5vh; } }
   .header__button {
     left: 50%;
     position: absolute;

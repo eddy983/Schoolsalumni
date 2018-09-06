@@ -12,7 +12,7 @@
     -ms-grid-rows: 1fr 1fr; 
 
     @include respond(mic-l) {
-      justify-items: start;
+      justify-items: center;
       padding: 5% 3%;
     }
 
