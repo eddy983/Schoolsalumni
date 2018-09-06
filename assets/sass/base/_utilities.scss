@@ -3,7 +3,9 @@
 }
 
 .justify-text {
-  text-align: justify;
+  @include respond(mic-l) {
+    text-align: justify;  
+  }
 }
 
 .about-margin {

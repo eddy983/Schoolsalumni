@@ -154,8 +154,9 @@ body {
 .center-text {
   text-align: center; }
 
-.justify-text {
-  text-align: justify; }
+@media (max-width: 40em) {
+  .justify-text {
+    text-align: justify; } }
 
 .about-margin {
   margin: 0 18%; }
