@@ -33,7 +33,7 @@ $breakpoint arguement choices:
 - l-laptop
 - 4k-desk
 
-ORDER: Base + typography > general layout + grid > page layout > components
+*ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
@@ -635,6 +635,9 @@ a {
     @media (max-width: 64em) {
       .header__image__img {
         height: 45vh; } }
+    @media (max-width: 40em) {
+      .header__image__img {
+        object-fit: fill; } }
     @media (max-width: 26.5625em) {
       .header__image__img {
         height: 24vh; } }
@@ -659,6 +662,9 @@ a {
     @media (max-width: 40em) {
       .header__text {
         font-size: 6.5vh; } }
+    @media (max-width: 37.5em) {
+      .header__text {
+        font-size: 3vh; } }
     @media (max-width: 26.5625em) {
       .header__text {
         font-size: 2.5vh; } }

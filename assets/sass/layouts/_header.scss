@@ -22,7 +22,7 @@
 
   &__image {
     &__img {
-      height: $image-height;
+      height: $image-height;  
       object-fit: cover;
       width: 100%;
 
@@ -32,6 +32,10 @@
 
       @include respond(tab-land) {
         height: $tab-l-height;
+      }
+
+      @include respond(mic-l) {
+        object-fit: fill;
       }
 
       @include respond(l-phone) {
@@ -64,6 +68,10 @@
     
     @include respond(mic-l) {
       font-size: 6.5vh;
+    }
+
+    @include respond(nex-7) {
+      font-size: 3vh;
     }
 
     @include respond(l-phone) {

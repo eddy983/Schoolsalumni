@@ -67,7 +67,7 @@ $breakpoint arguement choices:
 - l-laptop
 - 4k-desk
 
-ORDER: Base + typography > general layout + grid > page layout > components
+*ORDER: Base + typography > general layout + grid > page layout > components
 
 1em = 16px
 */
@@ -77,7 +77,7 @@ ORDER: Base + typography > general layout + grid > page layout > components
     @media (max-width: 20em) { @content }; // 320px in em 
   }
   @if $breakpoint == m-phone {
-    @media (max-width: 23.4375em) { @content }; // 375px in em 
+    @media (max-width: 23.4375em) { @content }; // 375px in em
   }
   @if $breakpoint == nex-4 {
     @media (max-width: 24em) { @content }; // 384px in em
@@ -93,6 +93,9 @@ ORDER: Base + typography > general layout + grid > page layout > components
   }
   @if $breakpoint == nex-9 {
     @media (max-width: 30em) { @content }; // 480px in em
+  }
+  @if $breakpoint == nex-7 {
+    @media (max-width: 37.5em) { @content }; // 600px in em 
   }
   @if $breakpoint == mic-l {
     @media (max-width: 40em) { @content }; // 640px in em 
