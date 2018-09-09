@@ -37,7 +37,7 @@
     justify-items: center; 
     padding: 2rem;
 
-    @include respond(mic-l) {
+    @include respond(mic-l) {  
       margin-bottom: 3%;
     }
 

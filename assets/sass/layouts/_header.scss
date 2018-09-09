@@ -182,8 +182,8 @@
       &--2 {
         padding: 6% 12%;
         width: 144%;
-
-        @include respond(nex-7) {  
+ 
+        @include respond(nex-7) {    
           font-size: 3.2rem;
           padding: 8% 10%;
           width: 150%;
