@@ -1,8 +1,6 @@
 .donate {
-  &__box {
-    //background: url(../../../assets/img/donate-bg.jpg);   
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(https://res.cloudinary.com/eddy983/image/upload/v1536258239/My%20images/donate-bg_1_optimized.jpg);     
-    //linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35));  
+  &__box {  
+    // todo background: linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(https://res.cloudinary.com/eddy983/image/upload/v1536258239/My%20images/donate-bg_1_optimized.jpg);      
     background-position: center;      
     background-size: cover; 
     display: -ms-grid;
@@ -14,6 +12,10 @@
     @include respond(mic-l) {
       justify-items: center;
       padding: 5% 3%;
+    }
+
+    @include respond(nex-7) {
+      justify-items: start;
     }
 
     &__amount {

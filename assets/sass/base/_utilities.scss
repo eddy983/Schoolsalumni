@@ -15,7 +15,7 @@
     margin: 0 6%;  
   }
 }
-.about-margin-first {
+.about-margin-first {  
   margin: 0% 18% 2% 18%;   
 
   @include respond(mic-l) {
@@ -26,6 +26,10 @@
 .services-margin {
   &-header {
     margin-bottom: 1.5%; 
+
+    @include respond(nex-7) {
+      margin-bottom: 4%;
+    }
   }
 
   &-title {
@@ -60,13 +64,13 @@
 .donate-header-margin {
   margin: 0 0 1.1% 0;
 
-  @include respond(mic-l) {
+  @include respond(mic-l) {  
     margin: 4% 0 5% 0;
   }
 }
 
 .donate-header-padding {
-  padding: 0 14%;
+  padding: 0 14%; 
 
   @include respond(mic-l) {
     padding: 0 4%;
@@ -74,5 +78,13 @@
 }
 
 .copyright-margin {
-  margin: 0 0.4%;
+  margin: 0 0.4%; 
+}
+
+.subscribe-margin {
+  margin: 0 20%;
+
+  @include respond(nex-7) {
+  margin: 0 2%;
+  }
 }

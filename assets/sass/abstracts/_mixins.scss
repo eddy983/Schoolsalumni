@@ -30,6 +30,14 @@
   width: 100%;
 }
 
+@mixin respond-padding {
+  padding: 0 12%;
+
+  @include respond(nex-7) {
+    padding: 0 8%;
+  }
+}
+
 
 // MEDIA QUERY MANAGER
 /*

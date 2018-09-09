@@ -12,6 +12,10 @@
       @include respond(mic-l) {
         height: 5rem;
       }
+
+      @include respond(nex-7) {  
+        height: 6rem;
+      }
       
       &:not(:first-child) { 
         margin-left: 3%;

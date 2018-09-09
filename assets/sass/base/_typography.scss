@@ -31,12 +31,16 @@ body {
     font-size: 1.6rem; 
   }
 
-  @include respond(f-hxd) {
+  @include respond(f-hxd) { 
     font-size: 2rem; 
   }
 
   @include respond(mic-l) {
     font-size: 2.3rem;  
+  }
+
+  @include respond(nex-7) {
+    font-size: 3.3rem;  
   }
 
   &-header {
@@ -47,6 +51,12 @@ body {
     @include respond(mic-l) { 
       font-size: 3rem;
     }
+
+    @include respond(nex-7) { 
+      font-size: 4rem; 
+    }
+
+    
   }
 
   &-title {
@@ -59,6 +69,10 @@ body {
 
     @include respond(mic-l) {
       font-size: 2.3rem;  
+    }
+
+    @include respond(nex-7) {
+      font-size: 3.3rem;  
     }
   }
 }
@@ -116,11 +130,19 @@ body {
   color: $color-white;
  
   &-copyright {
-    font-size: 1.4rem;
+    font-size: 1.4rem; 
 
     &-icon {
       font-size: 1.6rem;
       font-weight: 600;
     }
+  }
+}
+
+.subscribe-header {
+  font-weight: 400;
+
+  @include respond(nex-7) {
+    font-size: 3.6rem;
   }
 }

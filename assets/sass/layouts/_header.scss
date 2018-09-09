@@ -2,43 +2,38 @@
   position: relative;
 
   &__background {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.73);
+    clip-path: polygon(0% 0%, 65% 0, 50% 100%, 0 100%);
     height: $image-height;
     width: 100%;
     position: absolute;
-
-    @include respond(s-laptop) {
-      height: $s-laptop-height;
-    }
 
     @include respond(tab-land) {
       height: $tab-l-height;
     }
 
-    @include respond(l-phone) {
+    @include respond(mic-l) {
+      background-color: rgba(0, 0, 0, 0.42);
       height: $l-phone-height;
+      clip-path: none;
     }
   }
 
   &__image {
     &__img {
-      height: $image-height;  
+      height: $image-height;
       object-fit: cover;
       width: 100%;
-
-      @include respond(s-laptop) {
-        height: $s-laptop-height;
-      }
 
       @include respond(tab-land) {
         height: $tab-l-height;
       }
 
       @include respond(mic-l) {
-        object-fit: fill;
+        // todo object-fit: fill;
       }
 
-      @include respond(l-phone) {
+      @include respond(mic-l) {
         height: $l-phone-height;
       }
     }
@@ -46,36 +41,167 @@
 
   &__text {
     color: $color-white;
-    display: inline-table; 
-    font-size: 8.5vh;
-    font-weight: 500;
-    left: 50%;
+    // todo display: inline-table;
+    display: block;
+    // todo font-size: 4.5vh;
+    font-size: 1.5rem;
+    // todo font-weight: 500;
+    left: 28%;
+    margin-right: 25%;
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
 
-    @include respond(s-laptop) {   
-      font-size: 6.5vh;
+    &--1 {
+      font-size: 3.5rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      top: 25%;
+
+      @include respond(mic-l) {
+        @include respond-padding;
+        display: inline-table;
+        left: 50%;
+        margin-right: 0;
+      }
+
+      @include respond(nex-7) {
+        font-size: 4.5rem;
+      }
+
+      @include respond(nex-9) {
+        font-size: 3vh; 
+      }
     }
 
-    @include respond(tab-land) {
-      font-size: 3.5vh;
+    &--2 {
+      font-size: 1.5rem;
+      font-weight: 400;
+      text-align: justify;
+
+      @include respond(mic-l) {
+        @include respond-padding;
+        display: inline-table;
+        left: 50%;
+        margin-right: 0;
+      }
+
+      @include respond(nex-7) {
+        font-size: 3.2rem;
+      }
+
+      @include respond(nex-9) {
+        font-size: 2.3vh;
+      }
     }
 
-    @include respond(f-hxd) {
-      font-size: 3.5vh;
+    // todo @include respond(tab-land) {
+    //   font-size: 3.5vh;
+    // }
+
+    // todo @include respond(f-hxd) {
+    //   font-size: 3.5vh;
+    // }
+
+    // todo @include respond(mic-l) {
+    //   font-size: 6.5vh;
+    // }
+
+    // todo @include respond(nex-7) {
+    //   font-size: 3vh;
+    // }
+
+    // todo @include respond(l-phone) {
+    //   font-size: 2.5vh;
+    // }
+
+    &__sub {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
     }
-    
+
+    &__main {
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__subcribe-box {
+    position: absolute;
+    top: 74%;
+    left: 27rem;
+    transform: translate(-50%, -50%);
+    margin-right: 25%;  
+
     @include respond(mic-l) {
-      font-size: 6.5vh;
+      left: 32rem;
+      margin-right: 0;
     }
 
     @include respond(nex-7) {
-      font-size: 3vh;
+      top: 78%;
     }
 
-    @include respond(l-phone) {
-      font-size: 2.5vh;
+    @include respond(nex-9) {
+      left: 38%; 
+    }
+
+    &__text {
+      color: $color-white;
+      font-weight: 600;
+      margin-bottom: 1%;
+      font-size: 1.2rem;
+
+      @include respond(nex-7) {
+        display: inline-table;
+        font-size: 2.7rem;
+      }
+
+      @include respond(nex-9) {
+        font-size: 2vh;
+      }
+    }
+
+    &__input {
+      background-color: #606060;
+      border: none;
+      border-radius: 50px;  
+      color: #bdbdbd;
+      padding: 2% 3%; 
+      outline: 0;
+      width: 50%;
+
+      @include respond(nex-7) {
+        font-size: 2.8rem;
+        padding: 5% 10%;
+        width: 100%; 
+      }
+
+      &--2 {
+        padding: 6% 12%;
+        width: 144%;
+
+        @include respond(nex-7) {  
+          font-size: 3.2rem;
+          padding: 8% 10%;
+          width: 150%;
+        }
+
+        @include respond(nex-9) {
+          font-size: 2.2vh;
+        }
+
+        @include respond(l-phone) {
+          width: 135%;
+        }
+      }
+
+      &::placeholder {
+        //color: #E0E0E0;
+        color: #bdbdbd;
+      }
     }
   }
 
