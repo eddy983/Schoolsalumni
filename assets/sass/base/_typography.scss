@@ -1,6 +1,6 @@
 body {
   color: $color-black;
-  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 1.7;
@@ -13,7 +13,7 @@ body {
 
   @include respond(mic-l) {
     font-size: 2.3rem;
-    font-weight: 600;
+    font-weight: 600;  
   } 
 }
 
@@ -44,15 +44,16 @@ body {
   }
 
   &-header {
-    font-size: 2rem;
+    font-family: "Ubuntu", sans-serif;  
+    font-size: 2.5rem; 
     font-weight: 500;
-    letter-spacing: 3px;
+    letter-spacing: 2px;  
     
     @include respond(mic-l) { 
       font-size: 3rem;
     }
 
-    @include respond(nex-7) { 
+    @include respond(nex-7) {   
       font-size: 4rem; 
     }
 
@@ -60,6 +61,7 @@ body {
   }
 
   &-title {
+    font-family: "Ubuntu", sans-serif;
     font-weight: 600;
     letter-spacing: 0.01rem;
 

@@ -50,9 +50,10 @@
     margin-right: 25%;
     position: absolute;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);  
 
     &--1 {
+      font-family: "Ubuntu", sans-serif;
       font-size: 3.5rem;
       font-weight: 800;
       text-transform: uppercase;
