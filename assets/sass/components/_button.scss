@@ -4,6 +4,7 @@
   border-radius: 3px;
   color: $color-white;
   outline: 0;
+  text-decoration: none;
 
   &:hover {
     background-color: $color-orange;
@@ -11,15 +12,19 @@
   }
 
   &__donate {
-    font-size: 1.6rem;
+    font-size: $default-font;
     padding: 0.8rem 2.5rem;
   }
 
   &__header {
     border-radius: 5px;
-    font-size: 4vh;
+    font-size: 3.5vh;
     font-weight: 600;
     padding: 1.5rem 3rem;
+
+    @include respond(s-laptop) {
+      font-size: 4vh;
+    }
 
     @include respond(tab-land) {
       font-size: 4.5rem;
@@ -27,6 +32,22 @@
 
     @include respond(mic-l) {
       font-size: 2.5rem;
+    }
+  }
+
+  &__nav {
+    background-color: transparent;
+    color: $color-white;
+    font-size: $default-font;  
+    padding: 0.9rem 0.8rem 0.9rem 1.7rem;
+
+    &--2 {
+      padding: 0.9rem 1.7rem 0.9rem 0.8rem;
+    }
+
+    &:hover {
+      background-color: transparent;
+      color: $color-orange;
     }
   }
 
@@ -47,6 +68,10 @@
     color: $color-black;
     font-size: 1.8rem;
     padding: 0.5rem 1rem;
+
+    @include respond(mic-l) {
+      font-size: 2.7rem;
+    }
   }
 
   &__small-donate {
@@ -54,18 +79,17 @@
     display: block;
     font-size: 2rem;
     font-weight: 600;
-    margin-top: 10%;
+    margin-top: 3%;
     padding: 1rem 4rem;
 
     @include respond(mic-l) {
       font-size: 3rem;
-      padding: 1rem 2rem; 
+      padding: 1rem 2rem;
     }
-
   }
 
   &__subscribe {
-    display: block;      
+    display: block;
     padding: 0.8rem;
     font-weight: 600;
     margin-top: 2%;
@@ -77,11 +101,57 @@
     }
 
     @include respond(nex-9) {
-      font-size: 2.2vh;
+      font-size: 3.5vh;
+    }
+  }
+
+  &__pop-up {
+    border-radius: 5px;
+    font-size: $default-font;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 4%;
+    padding: 2.6% 0;
+    width: 100%;
+
+    &--donate {
+      margin-top: 1%;
+      padding: 2% 4%;
+      width: fit-content;
     }
 
-    @include respond(l-phone) {
-      font-size: 3.2vh;
+    @include respond(nex-7) {
+      font-size: 3rem;
+    }
+
+    &__text-button {
+      background-color: transparent;
+      color: $color-orange;
+      font-size: $default-font;
+      padding: 0 1%;
+
+      &:hover {
+        background-color: transparent;
+        text-decoration: underline;
+      }
+    }
+
+    &--twitter {
+      @include btn-display;
+
+      background-color: #55acee;
+    }
+
+    &--facebook {
+      @include btn-display;
+
+      background-color: #4d6fa9;
+    }
+
+    &--google {
+      @include btn-display;
+
+      background-color: #eb5757;
     }
   }
 }

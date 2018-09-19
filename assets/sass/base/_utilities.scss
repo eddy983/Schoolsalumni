@@ -78,13 +78,27 @@
 }
 
 .copyright-margin {
-  margin: 0 0.4%; 
+  margin: 0 0.4%;  
 }
 
-.subscribe-margin {
-  margin: 0 20%;
+.subscribe-margin {     
+  margin: 2% 20%;     
 
   @include respond(nex-7) {
   margin: 0 2%;
   }
 }
+
+.pop-up-text-margin {
+  margin-top: 2%;
+}
+
+.pop-up-join-margin {
+  margin-top: 4%;
+}
+
+.pop-up-donate-margin {
+  margin-top: 3%;
+}
+
+

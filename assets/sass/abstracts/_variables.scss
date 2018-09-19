@@ -7,9 +7,15 @@ $color-white: #fff;
 $color-bg-dark: rgba(0, 0, 0, 0.6);  
 
 // * Image
-$image-height: 80vh; 
+$image-height: 85vh;  
+$image-height-land: 90vh;  
 $s-laptop-height: 68vh; 
-$tab-l-height: 45vh;  
-$l-phone-height: 90vh;
+$tab-l-height: 45vh;
+$mic-height:52vh;  
+$mic-height-land:86vh;  
+$l-phone-height: 30vh;
+
+// * Font
+$default-font: 1.6rem;
 
 

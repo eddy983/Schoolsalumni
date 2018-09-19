@@ -39,7 +39,7 @@
       padding: 0.1rem 1rem;
 
       &:hover {
-        border-bottom: 2px solid transparent;
+        border-bottom: 2px solid transparent; 
       }
     }
 
@@ -52,12 +52,6 @@
       }
     }
 
-    &__join {
-      &:hover {
-        color: $color-orange;
-        border-bottom: 2px solid transparent;
-      }
-    }
   }
 
   &__link {

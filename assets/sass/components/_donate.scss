@@ -1,25 +1,40 @@
 .donate {
-  &__box {  
-    // todo background: linear-gradient(to left, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url(https://res.cloudinary.com/eddy983/image/upload/v1536258239/My%20images/donate-bg_1_optimized.jpg);      
-    background-position: center;      
-    background-size: cover; 
+  &__box {
+    background: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0.35),
+        rgba(0, 0, 0, 0.35)
+      ),
+      url(https://res.cloudinary.com/eddy983/image/upload/v1536258239/My%20images/donate-bg_1_optimized.jpg);
+    background-position: center;
+    background-size: cover;
     display: -ms-grid;
     display: grid;
     justify-items: center;
-    padding: 5% 0;
-    -ms-grid-rows: 1fr 1fr; 
+    padding: 3% 0;
+    -ms-grid-rows: 1fr 1fr;
 
     @include respond(mic-l) {
       justify-items: center;
-      padding: 5% 3%;
+      padding: 5% 3%; 
     }
 
-    @include respond(nex-7) {
-      justify-items: start;
+    &--land {
+      background: $color-white;
+      padding: 5% 0;
+
+      @include respond(nex-7) {
+        justify-items: start;
+        padding: 5% 5%;
+      }
     }
 
     &__amount {
-      margin-bottom: 2%;
+      margin-bottom: 1%;
+
+      &--land {
+        margin-bottom: 2%;
+      }
     }
 
     &__input {
@@ -27,7 +42,7 @@
       outline: 0;
       width: 33rem;
 
-      @include respond(mic-l) { 
+      @include respond(mic-l) {
         border-radius: 1rem;
         height: 4.4rem;
       }
@@ -38,7 +53,4 @@
       width: 36rem;
     }
   }
-
-
-
 }
