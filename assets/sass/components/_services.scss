@@ -23,28 +23,33 @@
   }
 
   &__boxes {
-    display: -ms-grid;
-    @include grid;
-    -ms-grid-columns: 1fr 1fr 1fr 1fr;
-    grid-template-columns: repeat(4, 1fr);
+    display: -ms-flex;
+    @include flex;
     margin: 0 5%;
-    grid-gap: 2%;
+    
 
     @include respond(mic-l) {
-      grid-template-columns: repeat(1, 1fr);
-    }
+      flex-direction: column;
+      margin: 0 10%;
+    } 
   }
 
   &__box {
-    @include grid;
+    align-items: center;
+    @include flex;
     background-color: $color-white;
     border: 1px solid #e3e3e3;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.32);
-    justify-items: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.32); 
+    flex: 1;
+    flex-direction: column;
     padding: 2rem;
 
+    &:not(:last-child) {
+      margin-right: 3%;
+    }
+
     @include respond(mic-l) {
-      margin-bottom: 3%;
+      margin: 0 0 8% 0;
     }
 
     &__icon {

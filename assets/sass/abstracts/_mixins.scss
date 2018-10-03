@@ -14,8 +14,9 @@
 }
 
 
-@mixin grid {
-  display: grid;
+@mixin flex {
+  display: -ms-flex;
+  display: flex;
 }
 
 @mixin header-margin {

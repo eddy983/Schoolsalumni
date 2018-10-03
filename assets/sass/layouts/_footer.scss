@@ -14,11 +14,19 @@
       }
 
       @include respond(nex-7) {  
+        height: 7rem;
+      }
+
+      @include respond(s-phone) {  
         height: 6rem;
       }
       
       &:not(:first-child) { 
         margin-left: 3%;
+
+        @include respond(nex-7) {
+          margin-left: 6%;
+        }
       }
     }
   }

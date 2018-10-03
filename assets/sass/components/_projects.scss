@@ -17,7 +17,7 @@
 
   &__boxes {
     position: relative;
-    @include grid;
+    @include flex;
     grid-gap: 2.5%;
     grid-row-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);

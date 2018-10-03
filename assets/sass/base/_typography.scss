@@ -28,12 +28,8 @@ body {
   font-size: 1.8rem;
 
   @include respond(tab-land) {
-    font-size: 1.6rem;
-  }
-
-  @include respond(f-hxd) {
-    font-size: 2rem;
-  }
+    font-size: 1.5rem;
+  } 
 
   @include respond(mic-l) {
     font-size: 2.3rem;
@@ -74,7 +70,7 @@ body {
     letter-spacing: 0.01rem;
 
     @include respond(f-hxd) {
-      font-size: 2rem;
+      font-size: 1.7rrem;
     }
 
     @include respond(mic-l) {
@@ -142,10 +138,26 @@ body {
   &-copyright {
     font-size: 1.4rem;
 
+    @include respond(nex-7) {
+      font-size: 2.2rem;
+    }  
+
     &-icon {
       font-size: 1.6rem;
       font-weight: 600;
     }
+  }
+
+  @include respond(nex-7) {
+    font-size: 2.2rem;
+  }
+
+  @include respond(nex-9) {
+    font-size: 1.6rem;    
+  }
+
+  @include respond(s-phone) {
+    font-size: 1.4rem;     
   }
 }
 
@@ -153,7 +165,15 @@ body {
   font-weight: 400;
 
   @include respond(nex-7) {
-    font-size: 3.6rem;
+    font-size: 3.3rem; 
+  }
+
+  @include respond(m-phone) {    
+    font-size: 3rem;     
+  }
+
+  @include respond(s-phone) {    
+    font-size: 2.6rem; 
   }
 }
 

@@ -8,8 +8,7 @@
       url(https://res.cloudinary.com/eddy983/image/upload/v1536258239/My%20images/donate-bg_1_optimized.jpg);
     background-position: center;
     background-size: cover;
-    display: -ms-grid;
-    display: grid;
+    @include flex;
     justify-items: center;
     padding: 3% 0;
     -ms-grid-rows: 1fr 1fr;
@@ -20,11 +19,13 @@
     }
 
     &--land {
+      align-items: center;
       background: $color-white;
-      padding: 5% 0;
+      display: flex;
+      justify-content: center;
+      padding: 3% 0;
 
       @include respond(nex-7) {
-        justify-items: start;
         padding: 5% 5%;
       }
     }
@@ -33,7 +34,20 @@
       margin-bottom: 1%;
 
       &--land {
+        flex: 0 0 33%;
         margin-bottom: 2%;
+
+        @include respond(tab-land) { 
+          flex: 0 0 55%; 
+        }
+
+        @include respond(mic-l) {
+          flex: 0 0 60%; 
+        }
+
+        @include respond(nex-7) {
+          flex: 0 0 100%; 
+        }
       }
     }
 

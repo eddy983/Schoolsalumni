@@ -90,14 +90,19 @@
 
   &__subscribe {
     display: block;
+    font-size: 1.66rem;
     padding: 0.8rem;
-    font-weight: 600;
-    margin-top: 2%;
+    font-weight: 600;  
+    margin-top: 3%;
+
+    @include respond(mic-l) {
+      font-size: 2.4rem;
+    }
 
     @include respond(nex-7) {
-      font-size: 4rem;
+      font-size: 4.2rem;  
       margin-top: 4%;
-      padding: 1rem 3rem;
+      padding: 1.5rem 3rem;
     }
 
     @include respond(nex-9) {

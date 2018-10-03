@@ -82,10 +82,15 @@
 }
 
 .subscribe-margin {     
-  margin: 2% 20%;     
+  //margin: 2% 20%; 
+  margin: 7% 10% 0% 10%;      
+
+  @include respond (tab-land) { 
+    margin: 6% 10% 0% 10%;
+  }
 
   @include respond(nex-7) {
-  margin: 0 2%;
+    margin: 0 2%;
   }
 }
 

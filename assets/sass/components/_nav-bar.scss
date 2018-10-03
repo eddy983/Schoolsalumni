@@ -7,7 +7,7 @@
   z-index: 1;
 
   @include respond(tab-land) { 
-    @include grid;
+    @include flex;
     justify-items: center;
   }
 

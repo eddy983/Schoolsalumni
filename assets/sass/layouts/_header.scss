@@ -122,6 +122,7 @@
           display: inline-table;
           left: 50%;
           margin-right: 0;
+          top: 20%;
         }
 
         @include respond(nex-7) {
@@ -144,6 +145,7 @@
           display: inline-table;
           left: 50%;
           margin-right: 0;
+          top: 46%; 
         }
 
         @include respond(nex-7) {
@@ -227,21 +229,19 @@
 
       &--2 {
         background-color: #606060;
-        padding: 6% 12%;  
-        width: 144%;
+        padding: 1.54rem 2rem;  
+        width: 100%;
 
         @include respond(nex-7) {
-          font-size: 3.2rem;
-          padding: 8% 10%;
-          width: 150%;
+          padding: 3.5rem 4rem;
         }
 
         @include respond(nex-9) {
           font-size: 2.2vh;
         }
 
-        @include respond(l-phone) {
-          width: 135%;
+        @include respond(m-phone) { 
+          padding: 2.5rem 4rem;
         }
 
         &::placeholder {
