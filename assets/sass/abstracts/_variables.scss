@@ -1,7 +1,9 @@
 // COLORS
 $color-blue: #488BE4;
+$color-blue2: #006DFF;
 $color-orange: #E4AE48;
-$color-grey-dark: #777; 
+$color-grey: #565656;
+//! $color-grey-dark: #777;  
 $color-black: #000;
 $color-white: #fff;
 $color-bg-dark: rgba(0, 0, 0, 0.6);  
@@ -15,7 +17,13 @@ $mic-height:52vh;
 $mic-height-land:86vh;  
 $l-phone-height: 30vh;
 
-// * Font
+//* Font Size
 $default-font: 1.6rem;
+$button-font-small: 1.4rem; 
+$button-font-big: 1.8rem;  
 
+//* Font Weight
+$bold: 600;
 
+//* Margin
+$box-margin: 4%;

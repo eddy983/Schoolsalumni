@@ -13,43 +13,99 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin margin {
+  margin: 0 20%;
 
-@mixin flex {
-  display: -ms-flex;
+  @include respond(tab-land) {
+    margin: 0 10%;
+  }
+
+  @include respond(nex-9) {
+    margin: 0 6%;
+  }
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
   display: flex;
 }
 
-@mixin header-margin {
-  padding: 0 18%;
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
 }
 
-@mixin header-line {
-  border-bottom: 1px solid #000;
-  line-height: 0.1em;
-  margin: 10px 0 20px;
-  text-align: center;
-  width: 100%;
+@mixin space-btw {
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
 }
 
-@mixin respond-padding {
-  padding: 0 12%;
-
-  @include respond(nex-7) {  
-    padding: 0 8%;
-  }
+@mixin justify-content($values) {
+  -webkit-box-pack: $values;
+  -moz-box-pack: $values;
+  -ms-flex-pack: $values;
+  -webkit-justify-content: $values;
+  justify-content: $values;
 }
 
-@mixin btn-display {
+@mixin align-items($values) {
+  -webkit-box-align: $values;
+  -moz-box-align: $values;
+  -ms-flex-align: $values;
+  -webkit-align-items: $values;
+  align-items: $values;
+}
 
-  @include respond(mic-l) {
-    display: none;
+@mixin flex-wrap($values) {
+  -webkit-flex-wrap: $values;
+  -ms-flex-wrap: $values;
+  flex-wrap: $values;
+}
+
+@mixin header-button {
+  @include flex(1 0 50%);
+  border: none;
+  color: $color-white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  height: 4.8rem;
+  letter-spacing: 0.64px;
+  outline: 0;
+
+  @include respond(tab-land) {
+    font-size: 2.2rem;
+    height: 6.8rem;
   }
 
   @include respond(nex-7) {
-    display: block;
+    font-size: 2.4rem;
+    height: 8.8rem;
   }
 }
 
+@mixin project-box {
+  background-color: #f4f4f4;
+  border: 0.75px solid rgba(3, 11, 55, 0.42);
+  border-radius: 2px;
+  font-size: 1.6rem;
+  margin-top: 0.6%;
+  outline: 0;
+  padding: 1rem;
+  width: 100%;
+
+  @include respond(tab-land) {
+    font-size: 3.4rem;
+  }
+}
 
 // MEDIA QUERY MANAGER
 /*
@@ -94,54 +150,88 @@ $breakpoint arguement choices:
 
 @mixin respond($breakpoint) {
   @if $breakpoint == s-phone {
-    @media (max-width: 20em) { @content }; // 320px in em 
+    @media (max-width: 20em) {
+      @content;
+    } // 320px in em
   }
   @if $breakpoint == m-phone {
-    @media (max-width: 23.4375em) { @content }; // 375px in em
+    @media (max-width: 23.4375em) {
+      @content;
+    } // 375px in em
   }
   @if $breakpoint == nex-4 {
-    @media (max-width: 24em) { @content }; // 384px in em
+    @media (max-width: 24em) {
+      @content;
+    } // 384px in em
   }
   @if $breakpoint == pix-2 {
-    @media (max-width: 25.6875em) { @content }; // 411px in em 
+    @media (max-width: 25.6875em) {
+      @content;
+    } // 411px in em
   }
   @if $breakpoint == iphone-6-plus {
-    @media (max-width: 25.875em) { @content }; // 414px in em
+    @media (max-width: 25.875em) {
+      @content;
+    } // 414px in em
   }
   @if $breakpoint == l-phone {
-    @media (max-width: 26.5625em) { @content }; // 425px in em 
+    @media (max-width: 26.5625em) {
+      @content;
+    } // 425px in em
   }
   @if $breakpoint == nex-9 {
-    @media (max-width: 30em) { @content }; // 480px in em
+    @media (max-width: 30em) {
+      @content;
+    } // 480px in em
   }
   @if $breakpoint == nex-7 {
-    @media (max-width: 37.5em) { @content }; // 600px in em 
+    @media (max-width: 37.5em) {
+      @content;
+    } // 600px in em
   }
   @if $breakpoint == mic-l {
-    @media (max-width: 40em) { @content }; // 640px in em 
+    @media (max-width: 40em) {
+      @content;
+    } // 640px in em
   }
   @if $breakpoint == tab-port {
-    @media (max-width: 48em) { @content }; // 768px in em 
+    @media (max-width: 48em) {
+      @content;
+    } // 768px in em
   }
   @if $breakpoint == f-hxd {
-    @media (max-width: 50em) { @content }; // 800px in em  
+    @media (max-width: 50em) {
+      @content;
+    } // 800px in em
   }
   @if $breakpoint == tab-land {
-    @media (max-width: 64em) { @content }; // 1024px in em //used
+    @media (max-width: 64em) {
+      @content;
+    } // 1024px in em //used
   }
-  @if $breakpoint == s-laptop { 
-    @media (max-width: 80em) { @content }; // 1280px in em 
+  @if $breakpoint == s-laptop {
+    @media (max-width: 80em) {
+      @content;
+    } // 1280px in em
   }
   @if $breakpoint == tab-pro-land {
-    @media (max-width: 85.375em) { @content }; // 1366px in em 
+    @media (max-width: 85.375em) {
+      @content;
+    } // 1366px in em
   }
   @if $breakpoint == laptop {
-    @media (max-width: 90em) { @content }; // 1440px in em
+    @media (max-width: 90em) {
+      @content;
+    } // 1440px in em
   }
   @if $breakpoint == l-laptop {
-    @media (max-width: 160em) { @content }; // 2560px in em
+    @media (max-width: 160em) {
+      @content;
+    } // 2560px in em
   }
   @if $breakpoint == 4k-desk {
-    @media (min-width: 160em) { @content }; // 2560px in em
+    @media (min-width: 160em) {
+      @content;
+    } // 2560px in em
   }
 }

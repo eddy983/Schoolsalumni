@@ -8,10 +8,10 @@
       url(https://res.cloudinary.com/eddy983/image/upload/v1536258239/My%20images/donate-bg_1_optimized.jpg);
     background-position: center;
     background-size: cover;
-    @include flex;
+    display: flex;
     justify-items: center;
     padding: 3% 0;
-    -ms-grid-rows: 1fr 1fr;
+  
 
     @include respond(mic-l) {
       justify-items: center;

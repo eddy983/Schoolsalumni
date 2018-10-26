@@ -1,6 +1,23 @@
 .footer {
   background-color: #333447;
+  margin-top: 7%;     
   padding: 3%;
+
+  @include respond(tab-land) {
+    margin-top: 24%;  
+  } 
+
+  @include respond(f-hxd) {
+    margin-top: 92%;      
+  }
+
+  @include respond(tab-port) {
+    margin-top: 24%;    
+  }
+
+  @include respond(nex-7) {
+    margin-top: 20%;   
+  }
 
   &__icons {
     margin: 2% auto 3% auto;   

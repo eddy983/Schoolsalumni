@@ -1,0 +1,111 @@
+.search {
+  @include margin;
+
+  &__search {
+    @include flexbox();
+    @include justify-content(center);
+
+    height: 3.2rem;
+
+    @include respond(tab-land) {
+      height: 5.2rem;   
+    }
+
+    @include respond(tab-land) {
+      height: 7.2rem;   
+    }  
+
+    &__input {  
+      background-color: rgba(0, 0, 0, 0.34);
+      border: none;
+      border-radius: 4px;
+      flex: 0 0 40%;
+      font-size: 1.2rem;
+      margin-right: -1rem;
+      outline: 0;
+      padding: 0 1.6rem;
+
+      @include respond(tab-land) {
+        font-size: 2.2rem; 
+        flex: 0 0 60%; 
+      }
+
+      @include respond(nex-7) {
+        font-size: 3.4rem; 
+        flex: 0 0 80%; 
+      }
+
+      &::placeholder {
+        color: rgba(255, 255, 255, 0.56);
+      }
+    }
+
+    &__icon {
+      height: 1.6rem;
+      width: 1.6rem;
+
+      @include respond(tab-land) {
+        height: 2.5rem;
+        width: 2.5rem; 
+      }
+
+      @include respond(nex-7) {
+        height: 4.5rem;
+        width: 4.5rem; 
+      }
+    }
+  }
+
+  &__boxes {
+    @include flexbox;
+    @include flex-wrap(wrap);
+
+    margin: 8% -1.5% 0 -1.5%; 
+  }
+
+  &__box {
+    margin-bottom: 4%;     
+    padding: 0 1.5%;   
+    width: 25%; 
+    
+    @include respond(tab-land) {
+      width: 33.3%; 
+    }
+
+    @include respond(mic-l) {
+      width: 50%;   
+    }
+
+    @include respond(nex-7) {
+      margin-bottom: 8%;
+      padding: 0 2.5%;
+      width: 100%;   
+    }
+
+    &__items {
+      @include flexbox;
+      @include space-btw;
+
+      background-color: rgba(242, 242, 242, 0.54);
+      border: 0.4px solid rgba(0, 109, 255, 0.5);
+      border-radius: 6px;
+      flex-direction: column;
+      height: 16.2rem;
+      padding: 1.6rem 0.8rem 0.8rem 0.8rem;
+
+      @include respond(tab-land) {
+        height: 20.2rem;  
+      }
+
+      @include respond(mic-l) {
+        height: 30.2rem;   
+        padding: 2.6rem 1.8rem 1.8rem 1.8rem;   
+      }
+
+      @include respond(nex-7) {
+        height: 36.2rem;
+        padding: 4.6rem 3.8rem 3.8rem 3.8rem;
+      }
+    }
+  }
+}

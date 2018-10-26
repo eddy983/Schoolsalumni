@@ -2,108 +2,68 @@
   text-align: center;
 }
 
-.justify-text {
-  @include respond(mic-l) {
-    text-align: justify;  
-  }
-}
-
-.about-margin {
-  margin: 0 18%;
-
-  @include respond(mic-l) {
-    margin: 0 6%;  
-  }
-}
-.about-margin-first {  
-  margin: 0% 18% 2% 18%;   
-
-  @include respond(mic-l) {
-    margin: 0 2%;
-  }
-}
-
-.services-margin {
-  &-header {
-    margin-bottom: 1.5%; 
-
-    @include respond(nex-7) {
-      margin-bottom: 4%;
-    }
-  }
-
-  &-title {
-    margin: 14% 0 2% 0;
-
-    @include respond(tab-land) {
-      margin: 6% 0 2% 0;
-
-      @include respond(mic-l) {
-        margin: 2% 0;
-      }
-    }
-  }
-
-  &-paragraph {
-    margin: 3% 0;
-
-    @include respond(mic-l) {
-      margin: 2% 0;
-    }
-  }
-}
-
-.report-margin {
-  margin-right: 3%;
-}
-
-.report-header-margin {
-  margin-bottom: 1%;
-}
-
-.donate-header-margin {
-  margin: 0 0 1.1% 0;
-
-  @include respond(mic-l) {  
-    margin: 4% 0 5% 0;
-  }
-}
-
-.donate-header-padding {
-  padding: 0 14%; 
-
-  @include respond(mic-l) {
-    padding: 0 4%;
-  }
-}
-
-.copyright-margin {
-  margin: 0 0.4%;  
-}
-
-.subscribe-margin {     
-  //margin: 2% 20%; 
-  margin: 7% 10% 0% 10%;      
-
-  @include respond (tab-land) { 
-    margin: 6% 10% 0% 10%;
-  }
+.project-margin {
+  margin-top: 4%;
 
   @include respond(nex-7) {
-    margin: 0 2%;
+    margin-top: 6%;
   }
 }
 
-.pop-up-text-margin {
-  margin-top: 2%;
+.project-margin-left {
+  margin-left: 2%;
 }
 
-.pop-up-join-margin {
+.project-margin-top {
+  margin-top: 3%;
+
+  @include respond(nex-7) {
+    margin-top: 6%;
+  }
+}
+
+.project-margin-drop {
+  @include respond(nex-7) {
+    margin-top: 6%;
+  }
+}
+
+.blue-bg {
+  background-color: #0f4082;
+}
+
+.grey-bg {
+  background-color: #5b5c5c; 
+}
+
+.contact-margin-top {  
   margin-top: 4%;
 }
 
-.pop-up-donate-margin {
-  margin-top: 3%;
+.contact2-margin-top {
+  margin-top: 5%;
 }
 
+.title-margin {
+  margin: 3% 0 2% 0;  
+}
 
+.header-margin {
+  margin: 3% 0 2% 0;  
+
+  @include respond(nex-7) {
+    margin: 6% 0 5% 0; 
+  }
+}
+
+.project-title-margin {
+  margin-bottom: 1%;  
+}
+
+.amount-margin {
+  margin-bottom: 2%; 
+}
+
+.copyright-margin {
+  margin: 0 0.4%;
+}

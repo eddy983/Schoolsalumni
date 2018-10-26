@@ -1,3 +1,61 @@
+/* Navigation */
+var open = false;
+
+function Drop(n) {
+  var i;
+  if (open == false) {
+    for (i = n; i < 5; i++) {
+      Drp(i);
+    }
+    open = true;
+  } else if (open == true) {
+    for (i = n; i < 5; i++) {
+      Cls(i);
+    }
+    open = false;
+  }
+}
+
+function Drp(n) {
+  var elem = document.getElementsByClassName("menu-con")[n];
+  var pos = -1 * window.innerHeight - n * 100;
+  var id = setInterval(frame, 5);
+
+  function frame() {
+    if (pos >= -10) {
+      clearInterval(id);
+      elem.style.top = 0 + "px";
+    } else {
+      pos += 10;
+      elem.style.top = pos + "px";
+    }
+  }
+}
+
+function Cls(n) {
+  var elems = document.getElementsByClassName("menu-con")[n];
+  var poss = 0;
+  var ids = setInterval(frames, 5);
+
+  function frames() {
+    if (poss <= -1 * window.innerHeight) {
+      clearInterval(ids);
+      elems.style.top = -1 * window.innerHeight + "px";
+    } else {
+      poss += -7 - n * 2;
+      elems.style.top = poss + "px";
+    }
+  }
+}
+
+/* Nav-bar Line */
+$(document).ready(function() {
+  $("ul li a").click(function() {
+    $("li a").removeClass("active");
+    $(this).addClass("active");
+  });
+});
+
 /* Dropdowns */
 var elements = $(document).find("select.select.pop-up__input--drop-down");
 for (var i = 0, l = elements.length; i < l; i++) {
@@ -9,7 +67,7 @@ for (var i = 0, l = elements.length; i < l; i++) {
     placeholder: $select.data("placeholder"),
     minimumResultsForSearch: 0,
     theme: "bootstrap",
-    width: "100%" 
+    width: "100%"
   });
 
   // Trigger focus
@@ -131,69 +189,97 @@ gulp.task("default", () =>
     .pipe(gulp.dest("dist"))
 );
 
+// ? For diplay of other elements in the create project form
 
-// ? For diplay of other elements in the same pop-up 
+// To go from project form page to personal form page
+function showPersonalForm() {
+  $("#div-1").css("display", "none");
+  $("#div-2").css("display", "block");
+}
 
-// To go from log-in page to join page
-function showJoinForm() {
-  $("#log-in").css("display", "none");
-  $("#join-1").css("display", "block");
-};
+// To go from project form page to group form page
+function showGroupForm() {
+  $("#div-1").css("display", "none");
+  $("#div-3").css("display", "block");
+}
 
-// To go from join page to log-in page
-function showLoginForm() {
-  $("#join-1").css("display", "none");
-  $("#log-in").css("display", "block");
-};
+// To go from project form page to public form page
+function showPubicForm() {
+  $("#div-1").css("display", "none");
+  $("#div-4").css("display", "block");
+}
 
-// To go from join page to last join page
-function showJoin2Form() {
-  $("#join-1").css("display", "none");
-  $("#join-2").css("display", "block");
-};
+// To go from any form page to submit form page
+function showSubmitForm() {
+  $("#div-1").css("display", "none");
+  $("#div-2").css("display", "none");
+  $("#div-3").css("display", "none");
+  $("#div-4").css("display", "none");
+  $("#div-5").css("display", "block");
+}
 
-// To go from last join page to log-in page
-function showLoginaForm() {
-  $("#join-2").css("display", "none");
-  $("#log-in").css("display", "block");
-};
+// To go from any form page to project form page
+function showProjectForm() {
+  $("#div-2").css("display", "none");
+  $("#div-3").css("display", "none");
+  $("#div-4").css("display", "none");
+  $("#div-5").css("display", "none");
+  $("#div-1").css("display", "block");
+}
 
-// ? For diplay of pop-up 
+// ? For diplay of other elements in the Payment form
 
-// To display pop-up for log-in
-function loginFormShow() {
-  $("#pop-up").css("visibility", "visible");
-  $("#pop-up").css("opacity", "1");
-  $("#join-1").css("display", "none");
-  $("#log-in").css("display", "block");
-};
+// To go from Remain Anonymous form page to Tag me form page
+function showTagForm() {
+  $("#d-1").css("display", "none");
+  $("#d-2").css("display", "block");
+  $("#h-1").css("background-color", "#5b5c5c");
+  $("#h-2").css("background-color", "#0f4082");
 
-// To display pop-up for join
-function joinFormShow() {
-  $("#pop-up").css("visibility", "visible");
-  $("#pop-up").css("opacity", "1");
-  $("#log-in").css("display", "none");
-  $("#join-1").css("display", "block");
-};
+  if (matchMedia) {
+    const mq = window.matchMedia("(min-width: 500px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+  }
 
-// To display pop-up2
-function showpopup2Form() {
-  $("#pop-up2").css("visibility", "visible");
-  $("#pop-up2").css("opacity", "1");
-};
+  function WidthChange(mq) {
+    if (mq.matches) {
+      $("#p-1").css("flex-direction", "unset");
+    } else {
+      $("#p-1").css("flex-direction", "column-reverse");
+    }
+  }
+}
 
+// To go from Tag me form page to Remain Anonymous form page
+function showRemainForm() {
+  $("#d-1").css("display", "block");
+  $("#d-2").css("display", "none");
+  $("#h-1").css("background-color", "#0f4082");
+  $("#h-2").css("background-color", "#5b5c5c");
 
-// ? For cancelling of pop-up 
+  if (matchMedia) {
+    const mq = window.matchMedia("(min-width: 500px)");
+    mq.addListener(WidthChange);
+    WidthChange(mq);
+  }
 
-// To cancel pop-up
-function popupFormCancel() {
-  $("#pop-up").css("visibility", "hidden");
-  $("#pop-up").css("opacity", "0");
-};
+  function WidthChange(mq) {
+    if (mq.matches) {
+      $("#p-1").css("flex-direction", "unset");
+    } else {
+      $("#p-1").css("flex-direction", "column");
+    }
+  }
+}
 
-// To cancel pop-up2
-function popup2FormCancel() {
-  $("#pop-up2").css("visibility", "hidden");
-  $("#pop-up2").css("opacity", "0");
-};
-
+//? Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btns");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("actives");
+    current[0].className = current[0].className.replace(" actives", "");
+    this.className += " actives";
+  });
+}

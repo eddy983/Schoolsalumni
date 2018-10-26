@@ -1,92 +1,64 @@
-.nav-bar {
-  @include clearfix;
-  background-color: $color-bg-dark;
-  padding: 1.5rem;
-  position: absolute;
-  width: 100%;
-  z-index: 1;
+.nav__bar {
+  @include flexbox();
+  align-items: center;
+  background-color: #060835;
+  height: 6rem;
+  padding: 0 6.7rem; 
 
-  @include respond(tab-land) { 
-    @include flex;
-    justify-items: center;
+  @include respond(tab-land) {
+    height: 8rem; 
   }
 
-  @include respond(f-hxd) {
-    display: none;
+  @include respond (mic-l) {
+    display: none;    
   }
 
-  &__list {
-    display: inline-flex;
-    float: right;
+  &__items {
+    @include flexbox();
+    justify-content: flex-end;
+    width: 100%;
 
     @include respond(tab-land) {
-      float: none;
+      @include space-btw; 
     }
   }
 
   &__item {
-    border-bottom: 2px solid transparent;
-    color: $color-white;
-    list-style: none;
-    padding: 0.5rem 1rem;
-
-    &:hover {
-      border-bottom: 2px solid $color-orange;
+    list-style-type: none;
+    &:not(:last-child) {
+      margin-right: 1.8rem;
     }
-
-    &--button {
-      border-bottom: 2px solid transparent;
-      padding: 0.1rem 1rem;
-
-      &:hover {
-        border-bottom: 2px solid transparent; 
-      }
-    }
-
-    &--search {
-      border-bottom: 2px solid transparent;
-      padding: 0.1rem 1rem;
-
-      &:hover {
-        border-bottom: 2px solid transparent;
-      }
-    }
-
   }
 
   &__link {
+    color: $color-white;
+    // font-size: 1.4rem;  
+    letter-spacing: 0.64px;
+    padding-bottom: 0.3rem;
     text-decoration: none;
-  }
 
-  &__search {
-    position: relative;
+    &__line {
+      background-color: $color-orange;
+      border-right: 3px;
+      height: 2px;
+      width: 50%;
+      transform: translateX(-12px);
+      transition: all 0.3s ease-in;
+      opacity: 0;
 
-    &__icon {
-      color: #fff;
-      font-size: 1.4rem;
-      left: 90%;
-      position: absolute;
-      top: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    &__input {
-      background-color: rgba(255, 255, 255, 0.32);
-      border: none;
-      border-radius: 4rem;
-      outline: 0;
-      padding: 0.9rem 0.9rem 0.9rem 1rem;
-      width: 204px;
-      color: #fff;
-
-      &::placeholder {
-        color: #fff;
-        font-size: 1.2rem;
+      @include respond(tab-land) {
+       height: 4px; 
       }
     }
   }
 
-  &__line {
-    border-left: 1px solid $color-white;
+  &__link:hover ~ &__link__line {
+    opacity: 1;
+    transform: translateX(0);
   }
+}
+
+.active ~ .nav__bar__link__line {
+  opacity: 1;
+  transform: translateX(0);
 }

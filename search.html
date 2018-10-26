@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open Sans:100,300,400,500,600,700" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="assets/plug-ins/css/fontawesome/fontawesome.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <title>searchalumni</title>
+</head>
+
+<body>
+
+  <!-- Respondsive Navigation -->
+  <div class="header__responsive-nav">
+    <!-- overlay -->
+    <div id="search">
+      <a href="#" id="close-btn">
+        <em class="fa fa-times"></em>
+      </a>
+      <input placeholder="type here" id="searchbox" type="search" />
+    </div>
+    <!--- /overlay -->
+    <nav class="nav">
+      <a href="#">
+        <img src="assets/img/menu.svg" alt="" class="nav__burger">
+      </a>
+      <input type="checkbox" class="nav__checkbox" id="navi-toggle">
+      <label for="navi-toggle" class="nav__button">Men</label>
+
+      <div class="nav__background">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#" class="nav__bar__link nav-font">Home</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__bar__link nav-font">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__bar__link nav-font">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a href="#" class="nav__bar__link nav-font">Contact us</a>
+          </li>
+          <li class="nav__item">
+            <button class="btn btn__fund">Fund a project</button>
+          </li>
+          <li class="nav__item">
+            <button class="btn btn__nav">Log in</button>
+          </li>
+        </ul>
+      </div>
+
+      <!-- trigger search with a link to an anchor -->
+      <a class="fr nav__search-btn" href='#search'>
+        <em class="fa fa-search"></em>
+      </a>
+      <!-- /trigger search with a link to an anchor -->
+
+      </ul>
+    </nav>
+  </div>
+
+  <nav class="nav__bar">
+    <ul class="nav__bar__items">
+      <li class="nav__bar__item">
+        <a href="#" class="nav__bar__link nav-font active">
+          Home
+        </a>
+        <div class="nav__bar__link__line"></div>
+      </li>
+      <li class="nav__bar__item">
+        <a href="#" class="nav__bar__link nav-font">
+          About
+        </a>
+        <div class="nav__bar__link__line"></div>
+      </li>
+      <li class="nav__bar__item">
+        <a href="#" class="nav__bar__link nav-font">
+          Projects
+        </a>
+        <div class="nav__bar__link__line"></div>
+      </li>
+      <li class="nav__bar__item">
+        <a href="#" class="nav__bar__link nav-font">
+          Contact us
+        </a>
+        <div class="nav__bar__link__line"></div>
+      </li>
+      <li class="nav__bar__item">
+        <button class="btn btn__fund">Fund a project</button>
+      </li>
+      <li class="nav__bar__item">
+        <button class="btn btn__nav">Log in</button>
+      </li>
+    </ul>
+  </nav>
+
+  <section class="search">
+    <div class="search__logo">
+      <h1 class="logo-font">logo</h1>
+    </div>
+    <div class="project__header project__header--2">
+      <button class="grey-bg project__header__create" onclick="window.location.href='create.html'">CREATE A PROJECT</button>
+      <button class="blue-bg project__header__fund">FUND EXISTING PROJECT</button>
+    </div>
+    <div class="center-text">
+      <p class="title-margin search-title">Available Projects</p>
+    </div>
+    <form action="#" class="search__search">
+      <input type="text" class="search__search__input" placeholder="Search School">
+      <button class="btn btn__search">
+        <svg class="search__search__icon">
+          <use xlink:href="assets/img/sprite.svg#icon-magnifying-glass"></use>
+        </svg>
+      </button>
+    </form>
+    <div class="search__boxes">
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">King’s College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">5 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Queen’s College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">10 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Christolat Garden Montesorri Secondary School</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">2 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box">12 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">12 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">12 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">12 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">12 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">12 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">12 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">12 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">12 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">12 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">12 Projects</button>
+        </div>
+      </div>
+      <div class="search__box">
+        <div class="search__box__items">
+          <div class="search__box__text">
+            <p class="box-font box-font-title">Ruby Springfield College</p>
+            <p class="box-font">Ikeja, Lagos</p>
+          </div>
+          <button class="btn btn__box" onclick="window.location.href='school.html'">12 Projects</button>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="center-text">
+      <div class="pagination" id="myDIV">
+        <button class="pagination__item pagination__item--word pagination-font">Prev page</button>
+        <button class="btns pagination__item pagination-font">1</button>
+        <button class="btns actives pagination__item pagination-font">2</button>
+        <button class="btns pagination__item pagination-font">3</button>
+        <button class="btns pagination__item pagination-font">4</button>
+        <button class="btns pagination__item pagination-font">5</button>
+        <button class="pagination__item pagination__item--word pagination-font">Next page</button>
+      </div>
+    </div>
+
+  </section>
+
+  <footer class="footer">
+    <div class="center-text">
+      <p class="footer-font">Connect with Us</p>
+      <div class="footer__icons">
+        <img src="assets/img/facebook-logo.svg" alt="Social Media" class="footer__icons__icon">
+        <img src="assets/img/twitter-social-logotype.svg" alt="Social Media" class="footer__icons__icon">
+        <img src="assets/img/instagram.svg" alt="Social Media" class="footer__icons__icon">
+        <img src="assets/img/linkedin-logo.svg" alt="Social Media" class="footer__icons__icon">
+      </div>
+      <p class="footer-font footer-font-copyright">
+        </span> <i class="fa fa-phone footer__contact"></i>+2349064519745
+        </span> <i class="fa fa-envelope footer__contact"></i>brownson121@gmail.com
+      </p>
+      <p class="footer-font footer-font-copyright">Copyright
+        <span class="copyright-margin footer-font footer-font-copyright footer-font-copyright-icon">&copy;</span> 2018
+        searchalumni,All
+        rights resevered.
+      </p>
+    </div>
+  </footer>
+
+
+
+  <!-- Scripts -->
+
+  <script src="assets/plug-ins/js/fontawesome/all.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.1/js/select2.full.min.js'></script>
+
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+
+  <script>
+    var header = document.getElementById("myDIV");
+    var btns = header.getElementsByClassName("btns");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("actives");
+        current[0].className = current[0].className.replace(" actives", "");
+        this.className += " actives";
+      });
+    }
+  </script>
+
+  <script src="assets/js/index.js"></script>
+</body>
+
+</html>

@@ -19,8 +19,13 @@ html {
   @include respond(l-phone) {
     font-size: 37.5%; // 7px
   }
+
+  height: 100%;
 }
 
 body {
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  height: 100%; 
 }
+
+

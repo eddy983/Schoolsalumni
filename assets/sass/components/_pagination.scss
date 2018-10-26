@@ -1,0 +1,61 @@
+.pagination {
+  @include flexbox();
+  @include justify-content(center); 
+
+  margin-top: 12%; 
+  width: 100%;  
+
+  &__item {
+    background-color: transparent;
+    border: none;
+    color: $color-black;   
+    font-weight: 600;
+    float: left;
+    outline: 0;
+    margin: 0 .4%; 
+    padding: 1.1rem 1.5rem;      
+    text-decoration: none;
+
+    @include respond(tab-land) {
+      font-size: 2.4rem;
+      padding: 1.2rem 1.6rem;     
+    }
+
+    @include respond(tab-land) {
+      font-size: 3rem; 
+    }
+
+    &:active,
+    &:hover,
+    &::selection {
+      background-color: $color-orange;   
+      color: $color-white;
+      border-radius: 0.8rem;
+    }
+
+    &--word {
+      color: $color-black;  
+      margin: 1rem 1.2rem;
+      padding: 0;
+
+      &:focus {
+        outline: 0;
+      }
+
+      &:hover {
+        background-color: $color-white;    
+        color: $color-orange;
+      }
+    }  
+  } 
+}
+
+.actives {
+  background-color: $color-orange;  
+  border-radius: 0.8rem;
+  color: $color-white;
+  &:focus {
+    outline: 0;
+  }
+}
+

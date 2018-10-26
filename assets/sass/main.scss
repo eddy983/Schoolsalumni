@@ -12,14 +12,17 @@
 @import "components/donate"; 
 @import "components/nav-bar";
 @import "components/navigation";  
+@import "components/pagination";  
 @import "components/partners";
 @import "components/pop-up";
-@import "components/projects"; 
+@import "components/radio";
 @import "components/search"; 
 @import "components/services"; 
 
 @import "layouts/footer";
 @import "layouts/header";  
 
-@import "pages/home";
+@import "pages/project";
+@import "pages/school";
+@import "pages/search";
 

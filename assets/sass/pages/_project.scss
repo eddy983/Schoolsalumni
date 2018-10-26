@@ -1,0 +1,225 @@
+.project {
+  @include margin;    
+
+  &__header {
+    @include flexbox();
+
+    @include respond(nex-7) {
+      flex-direction: column;
+    }
+
+    &--2 {
+      @include respond(nex-7) {
+        flex-direction: column-reverse; 
+      }
+    }
+
+    &__create {
+      @include header-button;
+
+      border-bottom-left-radius: 3px;
+      border-top-left-radius: 3px;
+      margin-right: -3rem;
+
+      @include respond(nex-7) {
+        -webkit-clip-path: polygon(10% 0%, 100% 0%, 96% 100%, 0% 100%);
+        clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%); 
+        margin-right: 0; 
+      }
+
+      &:hover {
+        background-color: $color-orange;
+        cursor: pointer;
+      }
+    }
+
+    &__fund {
+      @include header-button;
+
+      border-bottom-right-radius: 3px;
+      border-top-right-radius: 3px;
+      -webkit-clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
+      clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 0% 100%);
+
+      @include respond(nex-7) {
+        -webkit-clip-path: polygon(10% 0%, 100% 0%, 96% 100%, 0% 100%);
+        clip-path: polygon(4% 0%, 100% 0%, 96% 100%, 0% 100%);    
+      }
+
+      &:hover {
+        background-color: $color-orange;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__input {
+    @include project-box;
+
+    &--2 {
+      width: 34%;
+
+      @include respond(tab-land) {
+        width: 100%;
+      }
+    }
+
+    &--3 {
+      width: 50%;
+
+      @include respond(mic-l) {
+        width: 100%;
+      }
+    }
+
+    &__password {
+      width: 50%;
+      
+      @include respond(mic-l) {
+        width: 100%; 
+      }
+    }
+  }
+
+  &__dropdowns {
+    @include flexbox();
+    @include space-btw;
+
+    margin-top: 4%;
+    width: 100%;
+
+    @include respond(nex-7) {
+      flex-direction: column; 
+      margin-top: 0%;
+    }
+
+    &--drop {
+      @include flexbox();
+      @include flex(0 0 48%);
+
+      flex-direction: column;
+    }
+
+    &--select {
+      @include project-box;
+
+      padding: 1rem;
+    }
+  }
+
+  &__category {
+    &__buttons {
+      margin-top: 2%;
+    }
+  }
+
+  &__cost {
+    margin-top: 4%;
+
+    @include respond(tab-land) { 
+      margin-top: 8%;   
+    }
+  }
+
+  &__amount {
+    margin-top: 2%;
+
+    @include respond(tab-land) {
+      margin-top: 8%;  
+    }
+
+    &__upload {
+      @include flexbox();
+      margin-top: 2%;
+
+      &__pic {
+        @include respond(tab-land) {
+          height: 5rem;  
+        }
+      }
+    }
+  }
+
+  &__contact {
+    @include flexbox();
+    @include flex-wrap(wrap);
+    @include space-btw;
+
+    &--2 {
+      flex-direction: column;
+    }
+
+    @include respond(tab-land) {
+      flex-direction: column; 
+    }
+
+    &__box {
+      @include flex(0 0 48%);
+
+      &--2 {
+        margin-top: 2%; 
+        
+        @include respond(tab-land) {
+          margin-top: 5%;
+        }
+      }
+
+      &__input {
+        @include project-box;
+
+        &--3 {
+          width: 50%;
+    
+          @include respond(mic-l) {
+            width: 100%;
+          }
+        }   
+      }
+    }
+  }
+
+  &__password {
+    margin-top: 3%; 
+
+    @include respond(tab-land){
+      margin-top: 6%;
+    }
+
+    @include respond(nex-7) {
+      margin-top: 10%;
+    }
+  }
+
+  &__currency{
+    @include flexbox();
+
+    flex-direction: column; 
+
+    &__radio {
+      height: 20px;
+      width: 20px;
+
+      @include respond (tab-land) {
+        height: 40px;
+        margin-right: 1rem; 
+        width: 40px;
+      }
+
+      @include respond(nex-7) {
+        height: 4.5rem; 
+        width: 4.5rem;
+      }
+    }
+  }
+}
+
+#div-2,
+#div-3,
+#div-4,
+#div-5 {
+  display: none;
+}
+
+#d-2 {
+  display: none;   
+}
