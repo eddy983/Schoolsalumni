@@ -1,5 +1,15 @@
+//* Alignment
 .center-text {
   text-align: center;
+}
+
+//* Margin
+.land-margin {
+  margin-top: 6%; 
+}
+
+.service-margin {
+  margin-top: 1%; 
 }
 
 .project-margin {
@@ -26,14 +36,6 @@
   @include respond(nex-7) {
     margin-top: 6%;
   }
-}
-
-.blue-bg {
-  background-color: #0f4082;
-}
-
-.grey-bg {
-  background-color: #5b5c5c; 
 }
 
 .contact-margin-top {  
@@ -67,3 +69,16 @@
 .copyright-margin {
   margin: 0 0.4%;
 }
+
+//* Color
+.blue-bg {
+  background-color: #0f4082;
+}
+
+.grey-bg {
+  background-color: #5b5c5c; 
+}
+
+.orange-color {
+  color: $color-orange; 
+} 

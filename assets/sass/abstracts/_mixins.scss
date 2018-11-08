@@ -13,6 +13,21 @@
   transform: translate(-50%, -50%);
 }
 
+@mixin header-height {
+  height: 100vh;
+
+  @include respond(tab-land) {
+    height: 50vh;
+  }
+  
+  @include respond(mic-l) {
+    height: 100vh;  
+  }
+
+  @include respond(nex-7) {
+    height: 50vh;    
+  }
+}
 @mixin margin {
   margin: 0 20%;
 
@@ -25,6 +40,18 @@
   }
 }
 
+@mixin margin-land {
+  margin: 0 18%;
+
+  @include respond(tab-land) {
+    margin: 0 10%;
+  }
+
+  @include respond(mic-l) {
+    margin: 0 6%;  
+  }
+}
+
 @mixin flexbox() {
   display: -webkit-box;
   display: -moz-box;
@@ -33,12 +60,53 @@
   display: flex;
 }
 
+@mixin background-size($values) {
+  -webkit-background-size: $values;
+  -moz-background-size: $values;
+  -ms-background-size: $values;
+  -o-background-size: $values;
+  background-size: $values;
+}
+
+@mixin background-repeat($values) {
+  -webkit-background-repeat: $values;
+  -moz-background-repeat: $values;
+  -ms-background-repeat: $values;
+  -o-background-repeat: $values;
+  background-repeat: $values;
+}
+
+@mixin center-title {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+@mixin landing-line {
+  background-color: $color-orange;
+  border-radius: 4px;
+  height: 4px;
+  margin-top: 0.3%;
+  width: 8%;
+
+  @include respond(mic-l) {
+    width: 100%;  
+  }
+}
+
 @mixin flex($values) {
   -webkit-box-flex: $values;
   -moz-box-flex: $values;
   -webkit-flex: $values;
   -ms-flex: $values;
   flex: $values;
+}
+
+@mixin flex-column {
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 @mixin space-btw {
@@ -64,6 +132,19 @@
   -webkit-align-items: $values;
   align-items: $values;
 }
+
+@mixin align-start {
+  -webkit-align-self: flex-start;
+  -ms-flex-item-align: start; 
+  align-self: flex-start;
+}
+
+@mixin align-start {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;  
+  align-self: center;
+}
+
 
 @mixin flex-wrap($values) {
   -webkit-flex-wrap: $values;

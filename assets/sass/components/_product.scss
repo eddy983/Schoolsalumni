@@ -1,0 +1,23 @@
+.product {
+  @include margin-land; 
+
+  &__title {
+    width: 100%;
+
+    @include respond(mic-l) {
+     @include center-title; 
+    }
+
+    &__line {
+      @include landing-line;
+    }
+  }
+  
+  &__text {
+    margin-top: 3%; 
+    
+    @include respond(mic-l) {
+      margin-top: 6%;   
+    }
+  }
+}

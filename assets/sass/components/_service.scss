@@ -1,0 +1,93 @@
+.service {
+  margin: 12% 4.5% 0 4.5%; 
+  padding: 2% 0;     
+
+  @include respond(tab-land) {
+    margin: 20% 10% 0 10%;
+  }
+
+  @include respond(mic-l) {
+    margin: 20% 6% 0 6%;
+  }
+
+  &__title {
+    width: 100%;
+
+    @include respond(mic-l) {
+      @include center-title;
+      margin-bottom: -6%; 
+    }
+
+    &__line {
+      @include landing-line;
+
+      width: 5%;
+    }
+  }
+
+  &__boxes {
+    @include flexbox();
+
+    margin-top: 6%;
+    width: 100%;
+
+    @include respond(mic-l) {
+      @include flex-column;
+    }
+  }
+
+  &__box {
+    @include flexbox();
+
+    width: 33.3%;
+
+    &:not(:last-child) {
+      margin-right: 3%;
+
+      @include respond(mic-l) {
+        margin-right: 0%; 
+      } 
+    }
+
+    @include respond(tab-land) {
+      @include flex-column;
+    }
+
+    @include respond(mic-l) {
+      margin-right: 0%; 
+      width: 100%;
+    }
+
+    &__icon {
+      @include align-start;
+
+      height: 6rem;
+
+      @include respond(tab-land) {
+        height: 8rem;
+        margin-bottom: 4%;
+      }
+
+      @include respond(mic-l) {
+        height: 10rem;
+        margin: 12% 0 2% 0;
+
+        &:nth-child(0) {
+          margin: 3% 0 2% 0;         
+        }
+      }
+    }
+
+    &__texts {
+      margin-left: 7%;
+
+      @include respond(mic-l) {
+        margin-left: 0%; 
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+    }
+  }
+}

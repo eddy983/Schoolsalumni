@@ -5,6 +5,13 @@
   height: 6rem;
   padding: 0 6.7rem; 
 
+  &--land {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;    
+    width: 100%;
+    z-index: 1;
+  }
+
   @include respond(tab-land) {
     height: 8rem; 
   }

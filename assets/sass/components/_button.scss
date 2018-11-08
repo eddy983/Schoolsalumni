@@ -2,10 +2,11 @@
   background-color: $color-blue;
   border: none;
   border-radius: 4px;
-  color: $color-white; 
+  color: $color-white;
   font-weight: 600;
   outline: 0;
   text-decoration: none;
+  transition: all 0.1s ease-in;
 
   &:hover {
     background-color: $color-orange;
@@ -13,14 +14,14 @@
   }
 
   &__fund {
-    font-size: $button-font-small;
+    font-size: $font-small;
     font-weight: 600;
     letter-spacing: 0.64px;
     padding: 0.6rem 2.5rem;
 
     @include respond(tab-land) {
       font-size: 2.4rem;
-      padding: 1rem 2.5rem; 
+      padding: 1rem 2.5rem;
     }
 
     @include respond(mic-l) {
@@ -28,17 +29,17 @@
       padding: 1.5rem 2rem;
     }
 
-    @include respond(nex-7) {     
-      font-size: 4.4rem;  
-      padding: 2rem 4rem;    
+    @include respond(nex-7) {
+      font-size: 4.4rem;
+      padding: 2rem 4rem;
     }
   }
 
   &__nav {
     background-color: transparent;
-    border-radius: 3px; 
-    color: $color-white;
-    font-size: $button-font-small;
+    border-radius: 3px;
+    color: $color-orange;
+    font-size: $font-small;
     letter-spacing: 0.64px;
     text-transform: uppercase;
 
@@ -58,29 +59,101 @@
 
     &:hover {
       background-color: transparent;
+      color: #eecc8c;
+    }
+  }
+
+  &__header {
+    background-color: $color-blue2;
+    font-size: 2rem;
+    padding: 1rem 2.9rem;
+    transition: 0.2s ease-in;
+
+    @include respond(tab-land) {
+      font-size: $font-bigger;
+      padding: 2rem 4.9rem;
+    }
+
+    @include respond(nex-7) {
+      font-size: 5rem; 
+    }
+
+    @include respond(nex-9) {
+      font-size: 4.5rem; 
+    }
+
+    @include respond(nex-4) {
+      font-size: 4rem;  
+    }
+
+    @include respond(m-phone) {
+      font-size: 3rem;      
+    }
+  }
+
+  &__learn {
+    background-color: transparent;
+    border: 1px solid $color-blue2;
+    color: $color-blue2;
+    display: block;
+    font-size: 2rem;
+    font-weight: $bold;
+    margin: 5% auto;
+    padding: 1.1rem 3.5rem;
+
+    @include respond(tab-land) {
+      font-size: $font-bigger;
+      padding: 2.1rem 4.5rem;
+    }
+
+    @include respond(mic-l) {
+      font-size: 3.5rem;
+    }
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid $color-orange;
       color: $color-orange;
+    }
+  }
+
+  &__start {
+    background-color: $color-blue2;
+    display: block;
+    font-size: 2rem;
+    margin: 6% auto 0 auto;
+    padding: 1.2rem 2.6rem;
+
+    @include respond(tab-land) {
+      font-size: $font-bigger;
+      padding: 2.2rem 3.6rem;
+    }
+
+    @include respond(mic-l) {
+      font-size: 4rem;
+      margin: 12% auto 0 auto; 
     }
   }
 
   &__category {
     background-color: $color-blue2;
-    font-size: $button-font-big;
+    font-size: $font-big;
     padding: 1rem 3.4rem;
 
     @include respond(tab-land) {
-      font-size: 3.4rem;    
+      font-size: 3.4rem;
     }
-    @include respond(nex-7) { 
-      padding: 2rem 0;      
-      width: 100%;         
+    @include respond(nex-7) {
+      padding: 2rem 0;
+      width: 100%;
     }
 
     &:not(:last-child) {
       margin-right: 3%;
 
       @include respond(nex-7) {
-        margin-bottom: 4%;  
-        margin-right: 0; 
+        margin-bottom: 4%;
+        margin-right: 0;
       }
     }
   }
@@ -91,8 +164,8 @@
     margin-left: 1%;
 
     @include respond(tab-land) {
-      font-size: 3rem;   
-      margin-left: 2%;       
+      font-size: 3rem;
+      margin-left: 2%;
     }
 
     &:hover {
@@ -102,14 +175,14 @@
 
   &__cost {
     background-color: $color-blue2;
-    font-size: $button-font-big;
+    font-size: $font-big;
     font-weight: bold;
     margin-top: 2%;
     padding: 1rem 2rem;
 
     @include respond(tab-land) {
-      font-size: 3rem; 
-      margin-top: 3%; 
+      font-size: 3rem;
+      margin-top: 3%;
       padding: 2rem 5rem;
     }
   }
@@ -117,7 +190,7 @@
   &__amount {
     background-color: $color-blue2;
     display: block;
-    font-size: $button-font-big;
+    font-size: $font-big;
     margin-top: 3%;
     padding: 0.8rem 0;
     width: 34%;
@@ -125,8 +198,8 @@
     @include respond(tab-land) {
       font-size: 3rem;
       margin-top: 4%;
-      padding: 2rem 0; 
-      width: 50%; 
+      padding: 2rem 0;
+      width: 50%;
     }
   }
 
@@ -136,9 +209,9 @@
     font-weight: normal;
     margin-left: 0.5%;
 
-    @include respond(tab-land) { 
-      font-size: 2.5rem; 
-      margin: 2% 0 10% 1%; 
+    @include respond(tab-land) {
+      font-size: 2.5rem;
+      margin: 2% 0 10% 1%;
     }
 
     &:hover {
@@ -150,32 +223,32 @@
 
   &__submit {
     background-color: $color-blue2;
-    font-size: $button-font-big;
+    font-size: $font-big;
     margin-top: 4%;
     padding: 0.8rem 10rem;
 
     @include respond(tab-land) {
-      font-size: 4.4rem;  
+      font-size: 4.4rem;
       margin-top: 8%;
       padding: 2rem 10rem;
     }
   }
 
   &__create {
-    background-color: $color-blue2;    
+    background-color: $color-blue2;
     font-size: 1.8rem;
     margin-top: 4%;
     padding: 1rem 6.4rem;
 
     @include respond(tab-land) {
       font-size: 3.4rem;
-      margin: 6% 0 16% 0; 
-      padding: 1.5rem 6.4rem;       
+      margin: 6% 0 16% 0;
+      padding: 1.5rem 6.4rem;
     }
 
     @include respond(nex-7) {
-      margin: 10% 0 28% 0;  
-    } 
+      margin: 10% 0 28% 0;
+    }
   }
 
   &__search {
@@ -183,41 +256,41 @@
     @include flexbox();
     @include justify-content(center);
 
-    background-color: $color-blue2; 
+    background-color: $color-blue2;
     fill: $color-white;
     padding: 0 0.9rem;
 
     @include respond(tab-land) {
-      padding: 0 2rem ;
+      padding: 0 2rem;
     }
 
     @include respond(tab-land) {
-      padding: 0 3rem ; 
+      padding: 0 3rem;
     }
 
     @include respond(s-phone) {
-      padding: 0 1.5rem ;   
+      padding: 0 1.5rem;
     }
   }
 
   &__box {
-    background-color: $color-blue2; 
-    font-size: $button-font-small;
-    padding: 0.8rem 0; 
+    background-color: $color-blue2;
+    font-size: $font-small;
+    padding: 0.8rem 0;
 
     @include respond(tab-land) {
-      font-size: 2.8rem; 
+      font-size: 2.8rem;
       padding: 1rem 0;
     }
 
     @include respond(nex-7) {
-      font-size: 4rem; 
+      font-size: 4rem;
       padding: 1.8rem 0;
     }
   }
 
   &__project {
-    background-color: $color-blue2; 
+    background-color: $color-blue2;
     font-size: 1.4rem;
     padding: 1rem 0;
     width: 22%;
@@ -225,30 +298,30 @@
     @include respond(tab-land) {
       font-size: 3.4rem;
       padding: 2rem 0;
-      width: 36%;  
+      width: 36%;
     }
 
     @include respond(nex-7) {
       font-size: 4.4rem;
-      margin-top: 5%; 
+      margin-top: 5%;
       width: 100%;
     }
   }
 
   &__pay {
-    background-color: $color-blue2;  
+    background-color: $color-blue2;
     font-size: 2rem;
-    margin-top: 3%; 
+    margin-top: 3%;
     padding: 1rem 1.5rem;
 
     @include respond(tab-land) {
       font-size: 3.8rem;
-      margin-top: 5%; 
+      margin-top: 5%;
       padding: 2rem 2.5rem;
     }
 
     @include respond(nex-7) {
-      margin-top: 10%; 
+      margin-top: 10%;
     }
   }
 }

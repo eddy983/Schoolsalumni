@@ -1,0 +1,62 @@
+.header {
+  @include header-height;
+      
+  &__background {
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.33),
+        rgba(0, 0, 0, 0.3)
+      ),
+      linear-gradient(360deg, #000000 -2.13%, rgba(0, 0, 0, 0) 28.76%),
+      linear-gradient(180deg, #000000 9.45%, rgba(0, 0, 0, 0) 34.78%);
+    @include header-height;
+    position: absolute;
+    width: 100%;
+  }
+
+  &__image {
+    @include header-height;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__text {
+    display: inline-table; 
+    left: 50%;
+    position: absolute;
+    top: 37%;
+    transform: translate(-50%, -50%);  
+
+    @include respond(tab-land) {
+      text-align: center;
+      top: 24%;
+    }
+
+    @include respond(mic-l) {
+      top: 40%;
+    }
+
+    @include respond(nex-7) {
+      top: 20%; 
+    }
+  }
+
+  &__button {
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    @include respond(tab-land) {
+      top: 32%;
+    }
+
+    @include respond(mic-l) {
+      top: 66%;  
+    }
+
+    @include respond(nex-7) {
+      top: 38%; 
+    }
+  }
+}

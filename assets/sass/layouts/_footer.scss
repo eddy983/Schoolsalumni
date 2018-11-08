@@ -8,7 +8,8 @@
   } 
 
   @include respond(f-hxd) {
-    margin-top: 92%;      
+    // margin-top: 92%;      
+    margin-top: 28%;         
   }
 
   @include respond(tab-port) {

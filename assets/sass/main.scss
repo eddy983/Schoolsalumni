@@ -15,13 +15,16 @@
 @import "components/pagination";  
 @import "components/partners";
 @import "components/pop-up";
+@import "components/problem";
+@import "components/product";
 @import "components/radio";
 @import "components/search"; 
-@import "components/services"; 
+@import "components/service"; 
 
 @import "layouts/footer";
 @import "layouts/header";  
 
+@import "pages/landing";
 @import "pages/project";
 @import "pages/school";
 @import "pages/search";
