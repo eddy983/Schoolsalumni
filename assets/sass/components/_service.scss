@@ -64,6 +64,8 @@
       height: 6rem;
 
       @include respond(tab-land) {
+        @include align-center; 
+
         height: 8rem;
         margin-bottom: 4%;
       }
