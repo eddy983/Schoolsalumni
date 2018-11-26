@@ -10,6 +10,7 @@
 @import "components/about"; 
 @import "components/button"; 
 @import "components/donate"; 
+@import "components/dropdown"; 
 @import "components/nav-bar";
 @import "components/navigation";  
 @import "components/pagination";  
@@ -24,8 +25,8 @@
 @import "layouts/footer";
 @import "layouts/header";  
 
+@import "pages/dashboard";
 @import "pages/landing";
 @import "pages/project";
 @import "pages/school";
 @import "pages/search";
-

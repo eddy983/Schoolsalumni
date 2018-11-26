@@ -8,6 +8,10 @@
   margin-top: 6%; 
 }
 
+.land-margin2 {
+  margin-top: 4%; 
+}
+
 .service-margin {
   margin-top: 1%; 
 }
@@ -46,6 +50,26 @@
   margin-top: 5%;
 }
 
+.contact3-margin-top {  
+  margin-top: 3%;
+}
+
+.contact4-margin-top {  
+  margin-top: 3%;
+  
+  @include respond(tab-land) {  
+    margin-top: 4%;
+  }
+}
+
+.contact5-margin-top {  
+  margin-top: 3%;
+  
+  @include respond(tab-land) {  
+    margin-top: 10%;
+  }
+}
+
 .title-margin {
   margin: 3% 0 2% 0;  
 }
@@ -66,6 +90,34 @@
   margin-bottom: 2%; 
 }
 
+.or-margin {
+  margin: 2.5% 0;
+
+  @include respond(tab-land) {
+    margin: 6% 0;     
+  }
+}
+
+.progress-margin {
+  margin-bottom: 4%;   
+}
+
+.contact-us-margin {
+  margin: 8% 0;
+}
+
+.about-margin {
+  margin-top: 8%;
+
+  @include respond(nex-7) {
+    margin-top: 12%;  
+  }
+}
+
+.about-margin2 {
+  margin-top: 12%;
+}
+
 .copyright-margin {
   margin: 0 0.4%;
 }
@@ -82,3 +134,9 @@
 .orange-color {
   color: $color-orange; 
 } 
+
+//* Font Weight
+
+.bold {
+  font-weight: 600;
+}

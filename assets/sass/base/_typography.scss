@@ -3,7 +3,7 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: $default-font;
-  letter-spacing: 0.64px;
+  letter-spacing: 0.04em;
   line-height: 1.7;
 }
 
@@ -33,14 +33,14 @@ body {
   @include respond(nex-7) {
     font-size: 4.8rem;
   }
-  
+
   @include respond(nex-9) {
-    font-size: 3.8rem; 
+    font-size: 3.8rem;
   }
 
   @include respond(s-phone) {
-    font-size: 3.4rem;       
-  } 
+    font-size: 3.4rem;
+  }
 }
 
 .logo-font {
@@ -52,7 +52,7 @@ body {
 
 .landing-font {
   font-size: $font-big;
-  color: $color-grey-dark; 
+  color: $color-grey-dark;
 
   @include respond(tab-land) {
     font-size: 2.8rem;
@@ -67,27 +67,27 @@ body {
     font-weight: 500;
 
     @include respond(nex-9) {
-      font-weight: $bold;      
+      font-weight: $bold;
     }
   }
 
   &-header {
-    font-size: 2rem;  
-    font-weight: bold;   
+    font-size: 2rem;
+    font-weight: bold;
 
     @include respond(tab-land) {
-      font-size: $font-bigger;  
+      font-size: $font-bigger;
     }
   }
 }
 
 .service-font {
-  color: $color-grey-dark; 
+  color: $color-grey-dark;
   font-size: $font-small;
 
   @include respond(tab-land) {
     font-size: 2rem;
-    text-align: center;  
+    text-align: center;
   }
 
   @include respond(mic-l) {
@@ -95,16 +95,16 @@ body {
   }
 
   &-title {
-    color: $color-orange; 
+    color: $color-orange;
     font-size: 2.4rem;
-    font-weight: $bold;  
+    font-weight: $bold;
 
     @include respond(tab-land) {
-      font-size: 3rem; 
+      font-size: 3rem;
     }
 
     @include respond(mic-l) {
-      font-size: 3.8rem; 
+      font-size: 3.8rem;
     }
   }
 }
@@ -276,9 +276,93 @@ body {
   }
 }
 
+.empty-font {
+  color: rgba(0, 0, 0, 0.46);
+  font-size: 2.4rem;
+  font-weight: 400;
+
+  @include respond(tab-land) {
+    font-size: 4.4rem;
+  }
+
+  @include respond(mic-l) {
+    font-size: 3.6rem;
+    text-align: center;
+  }
+}
+
 .radio-font {
   @include respond(tab-land) {
     font-size: 3rem;
+  }
+}
+
+.progress-font {
+  color: $color-grey;
+  font-size: 1.2rem;
+
+  @include respond(tab-land) {
+    font-size: 3rem; 
+  }
+}
+
+.dash-font {
+  font-size: $font-small;
+  font-weight: bold;
+
+  @include respond(tab-land) {
+    font-size: 2.4rem; 
+  }
+
+  @include respond(mic-l) {
+    font-size: 3.4rem; 
+  }
+
+  &-header {
+    font-size: $default-font;
+
+    @include respond(tab-land) {
+      font-size: 2.6rem; 
+    }
+
+    @include respond(mic-l) {
+      font-size: 3.6rem; 
+    }
+  }
+
+  &-title {
+    color: $color-grey;
+  }
+}
+
+.dashboard-header {
+  color: $color-grey;
+  font-size: 2.4rem;
+  font-weight: $bold;
+
+  @include respond(tab-land) {
+    font-size: 5.4rem;  
+  }
+}
+
+.contact-us-header {
+  font-size: 2.4rem;
+  font-weight: 600;
+
+  @include respond(tab-land) {
+    font-size: 3.4rem;
+  }
+}
+
+.about-font {
+  font-size: 1.8rem;
+
+  @include respond(tab-land) {
+    font-size: 2.6rem;
+  }
+
+  @include respond(nex-7) {
+    font-size: 3.6rem;
   }
 }
 

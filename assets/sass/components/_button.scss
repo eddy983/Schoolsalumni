@@ -36,7 +36,7 @@
   }
 
   &__nav {
-    background-color: transparent;
+    background-color: $transparent;
     border-radius: 3px;
     color: $color-orange;
     font-size: $font-small;
@@ -58,7 +58,7 @@
     }
 
     &:hover {
-      background-color: transparent;
+      background-color: $transparent;
       color: #eecc8c;
     }
   }
@@ -75,24 +75,24 @@
     }
 
     @include respond(nex-7) {
-      font-size: 5rem; 
+      font-size: 5rem;
     }
 
     @include respond(nex-9) {
-      font-size: 4.5rem; 
+      font-size: 4.5rem;
     }
 
     @include respond(nex-4) {
-      font-size: 4rem;  
+      font-size: 4rem;
     }
 
     @include respond(m-phone) {
-      font-size: 3rem;      
+      font-size: 3rem;
     }
   }
 
   &__learn {
-    background-color: transparent;
+    background-color: $transparent;
     border: 1px solid $color-blue2;
     color: $color-blue2;
     display: block;
@@ -111,7 +111,7 @@
     }
 
     &:hover {
-      background-color: transparent;
+      background-color: $transparent;
       border: 1px solid $color-orange;
       color: $color-orange;
     }
@@ -131,7 +131,7 @@
 
     @include respond(mic-l) {
       font-size: 4rem;
-      margin: 12% auto 0 auto; 
+      margin: 12% auto 0 auto;
     }
   }
 
@@ -159,7 +159,7 @@
   }
 
   &__back {
-    background-color: transparent;
+    background-color: $transparent;
     color: $color-orange;
     margin-left: 1%;
 
@@ -169,7 +169,7 @@
     }
 
     &:hover {
-      background-color: transparent;
+      background-color: $transparent;
     }
   }
 
@@ -204,7 +204,7 @@
   }
 
   &__upload {
-    background-color: transparent;
+    background-color: $transparent;
     color: $color-black;
     font-weight: normal;
     margin-left: 0.5%;
@@ -215,7 +215,7 @@
     }
 
     &:hover {
-      background-color: transparent;
+      background-color: $transparent;
       color: $color-orange;
       text-decoration: underline;
     }
@@ -236,7 +236,7 @@
 
   &__create {
     background-color: $color-blue2;
-    font-size: 1.8rem;
+    font-size: $font-big;
     margin-top: 4%;
     padding: 1rem 6.4rem;
 
@@ -322,6 +322,142 @@
 
     @include respond(nex-7) {
       margin-top: 10%;
+    }
+  }
+
+  &__login {
+    background-color: $color-blue2;
+    font-size: $font-big;
+    margin-top: 4%;
+    padding: 1rem 10.6rem;
+
+    @include respond(tab-land) {
+      font-size: 3.4rem;
+      margin: 6% 0 28% 0;
+      padding: 1.5rem 6.4rem;
+    }
+
+    @include respond(f-hxd) {
+      margin: 6% 0 56% 0;
+    }
+
+    @include respond(nex-7) {
+      margin: 10% 0 28% 0;
+    }
+  }
+
+  &__dash {
+    background-color: $transparent;
+    font-size: $font-big;
+    font-weight: $bold;
+    letter-spacing: 0.04em;
+
+    @include respond(tab-land) {
+      font-size: 3.6rem;
+      height: 100%;
+      padding: 0 4rem;
+    }
+
+    @include respond(nex-7) {
+      font-size: 3.4rem;
+      padding: 0 1.8rem;
+    }
+
+    @include respond(nex-4) {
+      font-size: 3.2rem;   
+    }
+
+    @include respond(s-phone) {
+      font-size: 2.2rem; 
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 12%;
+
+      @include respond(tab-land) {
+        margin-bottom: 0;
+      }
+    }
+
+    &:hover {
+      background-color: $transparent;
+      color: $color-orange;
+    }
+
+    &:active {
+      @include respond(tab-land) {
+        background-color: $color-orange;
+        color: $color-black;
+      }
+    }
+  }
+
+  &__empty {
+    font-size: $font-big;
+    margin-top: 2%;
+
+    padding: 1.2rem 3.8rem;
+
+    @include respond(tab-land) {
+      font-size: 4.8rem;
+      margin-top: 6%;
+      padding: 2.2rem 8.8rem;
+    }
+
+    @include respond(mic-l) {
+      font-size: 3.8rem;
+    }
+  }
+
+  &__progress {
+    background-color: $color-blue;
+    border-radius: 3px;
+    font-size: $default-font;
+    padding: 1rem 0;
+    margin-top: 8%;
+    width: 100%;
+
+    @include respond(tab-land) {
+      font-size: 3.6rem;    
+    }
+
+    @include respond(mic-l) {
+      font-size: 5.6rem;    
+    }
+
+    @include respond(s-phone) {
+      font-size: 4.6rem;      
+    }
+  }
+
+  &__contact {
+    display: block;
+    font-size: 2rem;
+    margin: 8% auto;
+    padding: 1rem 5.4rem;
+
+    @include respond(tab-land) {
+      font-size: 4rem;
+      padding: 2rem 12.4rem;
+    }
+  }
+
+  &__profile {
+    background-color: $color-blue2;
+    font-size: 1.8rem;
+    margin-top: 3%;
+    padding: 1.2rem 0;
+    width: 48%;
+
+    @include respond(tab-land) {
+      font-size: 3.8rem;
+      margin: 8% 0 6% 0; 
+      padding: 2.2rem 0;
+      width: 50%;
+    }
+
+    @include respond(m-phone) {
+      width: 100%; 
     }
   }
 }

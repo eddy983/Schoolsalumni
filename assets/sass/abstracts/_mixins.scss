@@ -19,13 +19,13 @@
   @include respond(tab-land) {
     height: 50vh;
   }
-  
+
   @include respond(mic-l) {
-    height: 100vh;  
+    height: 100vh;
   }
 
   @include respond(nex-7) {
-    height: 50vh;    
+    height: 50vh;
   }
 }
 @mixin margin {
@@ -48,17 +48,11 @@
   }
 
   @include respond(mic-l) {
-    margin: 0 6%;  
+    margin: 0 6%;
   }
 }
 
-@mixin flexbox() {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-}
+
 
 @mixin background-size($values) {
   -webkit-background-size: $values;
@@ -90,8 +84,16 @@
   width: 8%;
 
   @include respond(mic-l) {
-    width: 100%;  
+    width: 100%;
   }
+}
+
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
 }
 
 @mixin flex($values) {
@@ -107,6 +109,13 @@
   -moz-box-orient: horizontal;
   -ms-flex-direction: column;
   flex-direction: column;
+}
+
+@mixin flex-row {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
 @mixin space-btw {
@@ -135,21 +144,25 @@
 
 @mixin align-start {
   -webkit-align-self: flex-start;
-  -ms-flex-item-align: start; 
+  -ms-flex-item-align: start;
   align-self: flex-start;
 }
 
-@mixin align-start {
+@mixin align-center {
   -webkit-align-self: center;
-  -ms-flex-item-align: center;  
+  -ms-flex-item-align: center;
   align-self: center;
 }
-
 
 @mixin flex-wrap($values) {
   -webkit-flex-wrap: $values;
   -ms-flex-wrap: $values;
   flex-wrap: $values;
+}
+
+@mixin dash-body {
+  @include flexbox();
+  @include flex-column;
 }
 
 @mixin header-button {
@@ -236,7 +249,7 @@ $breakpoint arguement choices:
     } // 320px in em
   }
   @if $breakpoint == m-phone {
-    @media (max-width: 23.4375em) {
+    @media (max-width: 23.4375em) {    
       @content;
     } // 375px in em
   }
