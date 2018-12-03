@@ -52,8 +52,6 @@
   }
 }
 
-
-
 @mixin background-size($values) {
   -webkit-background-size: $values;
   -moz-background-size: $values;
@@ -201,6 +199,25 @@
   }
 }
 
+@mixin school-margin {
+  margin: 0 5.4%;
+}
+
+@mixin icon-size {
+  height: 1.8rem;
+  width: 1.8rem;
+
+  @include respond(tab-land) {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
+
+  @include respond(nex-7) {
+    height: 3.8rem;
+    width: 3.8rem;
+  }
+}
+
 // MEDIA QUERY MANAGER
 /*
 0 - 320px: Small Phone
@@ -249,7 +266,7 @@ $breakpoint arguement choices:
     } // 320px in em
   }
   @if $breakpoint == m-phone {
-    @media (max-width: 23.4375em) {    
+    @media (max-width: 23.4375em) {
       @content;
     } // 375px in em
   }

@@ -1,0 +1,58 @@
+.inner {
+  @include school-margin;
+
+  &__title {
+    @include flexbox();
+    @include align-items(center);
+
+    margin: 3.5rem 0 2% 0;
+  }
+
+  &__icon {
+    @include icon-size;
+  }
+
+  &__image {
+    height: 37rem;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  &__info {
+    margin-top: 1.5%;
+
+    @include respond(nex-7) {
+      margin-top: 6.5%;  
+    }
+  }
+
+  &__gallery {
+    @include flexbox();
+    @include flex-wrap(wrap);
+
+    margin: 0 -1.5%;
+
+    &__box {
+      height: 24rem;
+      margin-bottom: 3%;
+      padding: 0 1.5%;
+      width: 25%;
+
+      @include respond(mic-l) {
+        height: 32rem;
+        width: 100%;
+      }
+
+      @include respond(nex-7) {
+        height: 36rem;
+        margin-bottom: 8%; 
+      }
+    }
+
+    &__image {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}

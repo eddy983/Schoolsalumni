@@ -90,6 +90,18 @@
   margin-bottom: 2%; 
 }
 
+.info-margin {
+  margin-bottom: 2%; 
+}
+
+.info-text-margin {
+  margin-top: 5%;  
+
+  @include respond(nex-7) {
+    margin-top: 0%;   
+  }
+}
+
 .or-margin {
   margin: 2.5% 0;
 
@@ -116,6 +128,26 @@
 
 .about-margin2 {
   margin-top: 12%;
+}
+
+.sub-margin {
+  margin-left: 2%;  
+}
+
+.inner-sub-margin {
+  margin: 0 1%;
+
+  @include respond(tab-land) {
+    margin: 0 2.5%;  
+  }
+
+  @include respond(nex-7) {
+    margin: 0 6.5%  0 3.5%;    
+  }
+}
+
+.gallery-margin {
+  margin: 2% 0;
 }
 
 .copyright-margin {
