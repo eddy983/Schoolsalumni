@@ -1419,7 +1419,7 @@ body {
   -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(../../../assets/img/Bad-class.jpg);
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url(../../../assets/img/https://res.cloudinary.com/eddy983/image/upload/v1543846294/My%20images/Bad-class.jpg);
   padding: 8% 0; }
   .problem__statement {
     margin: 0 18%; }

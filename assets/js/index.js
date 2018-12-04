@@ -26,6 +26,17 @@ $(document).ready(function() {
   });
 });
 
+// ? For pagination
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btns");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function () {
+    var current = document.getElementsByClassName("actives");
+    current[0].className = current[0].className.replace(" actives", "");
+    this.className += " actives";
+  });
+}
+
 
 /*  Navigation */
 var open = false;
@@ -218,6 +229,8 @@ gulp.task("default", () =>
     .pipe(gulp.dest("dist"))
 );
 
+
+
 // ? For diplay of other elements in the create project form
 
 // To go from project form page to personal form page
@@ -275,7 +288,7 @@ function showTagForm() {
     if (mq.matches) {
       $("#p-1").css("flex-direction", "unset");
     } else {
-      $("#p-1").css("flex-direction", "column-reverse");
+      $("#p-1").css("flex-direction", "column-reverse"); 
     }
   }
 }
