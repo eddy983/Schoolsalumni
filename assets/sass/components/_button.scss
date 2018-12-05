@@ -359,12 +359,15 @@
     }
 
     @include respond(nex-7) {
+      @include flexbox();
+      @include align-items(center);
+       
       font-size: 3.4rem;
       padding: 0 1.8rem;
     }
 
     @include respond(nex-4) {
-      font-size: 3.2rem;
+      font-size: 2.9rem;           
     }
 
     @include respond(s-phone) {
