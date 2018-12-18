@@ -11,6 +11,10 @@ body {
   font-size: $font-small;
   letter-spacing: 0.64px;
 
+  @include respond(4k-desk) {
+    font-size: 3.4rem;
+  }
+
   @include respond(tab-land) {
     font-size: 2.2rem;
   }
@@ -29,6 +33,10 @@ body {
   font-size: 3.2rem;
   font-weight: $bold;
   text-transform: uppercase;
+
+  @include respond(4k-desk) {
+    font-size: 6.2rem;
+  }
 
   @include respond(nex-7) {
     font-size: 4.8rem;
@@ -54,6 +62,10 @@ body {
   font-size: $font-big;
   color: $color-grey-dark;
 
+  @include respond(4k-desk) {
+    font-size: 3rem;
+  }
+
   @include respond(tab-land) {
     font-size: 2.8rem;
   }
@@ -75,6 +87,10 @@ body {
     font-size: 2rem;
     font-weight: bold;
 
+    @include respond(4k-desk) {
+      font-size: 3.8rem;
+    }
+
     @include respond(tab-land) {
       font-size: $font-bigger;
     }
@@ -84,6 +100,10 @@ body {
 .service-font {
   color: $color-grey-dark;
   font-size: $font-small;
+
+  @include respond(4k-desk) {
+    font-size: 2.4rem;
+  }
 
   @include respond(tab-land) {
     font-size: 2rem;
@@ -99,6 +119,10 @@ body {
     font-size: 2.4rem;
     font-weight: $bold;
 
+    @include respond(4k-desk) {
+      font-size: 3.4rem;
+    }
+
     @include respond(tab-land) {
       font-size: 2.8rem;
     }
@@ -110,6 +134,10 @@ body {
 }
 
 .project-font {
+  @include respond(4k-desk) {
+    font-size: 3.2rem;
+  }
+
   @include respond(tab-land) {
     font-size: 2.2rem;
   }
@@ -121,21 +149,20 @@ body {
   &-cap {
     font-size: 1.2rem;
 
+    @include respond(4k-desk) {
+      font-size: 2.4rem;
+    }
+
     @include respond(nex-7) {
       font-size: $default-font;
-    }
-
-    &--red {
-      color: #ff0000;
-    }
-
-    &--green {
-      color: #0e9902;
     }
   }
 }
 
 .type-font {
+  @include respond(4k-desk) {
+    font-size: 3.4rem;
+  }
   @include respond(tab-land) {
     font-size: 3rem;
   }
@@ -143,6 +170,10 @@ body {
 
 .contact-header {
   font-weight: $bold;
+
+  @include respond(4k-desk) {
+    font-size: 4rem;  
+  }   
 
   @include respond(tab-land) {
     font-size: 3rem;
@@ -152,6 +183,10 @@ body {
 .acct-font {
   font-size: $font-big;
 
+  @include respond(4k-desk) {
+    font-size: 3.4rem; 
+  }
+
   @include respond(tab-land) {
     font-size: 2.4rem;
   }
@@ -160,6 +195,10 @@ body {
     font-size: 2rem;
     font-weight: $bold;
 
+    @include respond(4k-desk) {
+      font-size: 5rem; 
+    }
+
     @include respond(tab-land) {
       font-size: 3.5rem;
     }
@@ -167,6 +206,10 @@ body {
 }
 
 .password-font {
+  @include respond(4k-desk) {
+    font-size: 3.2rem;
+  }
+
   @include respond(tab-land) {
     font-size: 2.2rem;
   }
@@ -179,6 +222,10 @@ body {
 .schools-title {
   font-weight: $bold;
 
+  @include respond(4k-desk) {
+    font-size: 3.5rem;
+  }
+
   @include respond(tab-land) {
     font-size: 2.5rem;
   }
@@ -190,6 +237,10 @@ body {
 
 .box-font {
   font-size: $font-small;
+
+  @include respond(4k-desk) {
+    font-size: 2.8rem;   
+  }
 
   @include respond(tab-land) {
     font-size: $font-big;
@@ -213,6 +264,10 @@ body {
   font-size: 2.2rem;
   font-weight: 400;
 
+  @include respond(4k-desk) {
+    font-size: 3.6rem;
+  }
+
   @include respond(tab-land) {
     font-size: 3.4rem;
   }
@@ -226,6 +281,10 @@ body {
   font-size: $font-big;
   font-weight: $bold;
 
+  @include respond(4k-desk) {
+    font-size: 3.2rem; 
+  }
+
   @include respond(tab-land) {
     font-size: 2.8rem;
   }
@@ -238,6 +297,10 @@ body {
     font-size: 1.2rem;
     font-weight: $bold;
 
+    @include respond(4k-desk) {
+      font-size: 2.8rem;
+    }
+
     @include respond(tab-land) {
       font-size: 2rem;
     }
@@ -249,6 +312,10 @@ body {
 }
 
 .amount-font {
+  @include respond(4k-desk) {
+    font-size: 3.2rem; 
+  }
+
   @include respond(tab-land) {
     font-size: 2.6rem;
   }
@@ -266,6 +333,10 @@ body {
 .description-font {
   font-size: 1.3rem;
 
+  @include respond(4k-desk) {
+    font-size: 2.8rem;
+  }
+
   @include respond(tab-land) {
     font-size: 2.3rem;
   }
@@ -278,6 +349,10 @@ body {
     color: $color-grey;
     font-size: $font-big;
     font-weight: $bold;
+
+    @include respond(4k-desk) {
+      font-size: 3.2rem;
+    }
 
     @include respond(tab-land) {
       font-size: 2.8rem;
@@ -294,6 +369,10 @@ body {
   font-size: 2.4rem;
   font-weight: 400;
 
+  @include respond(4k-desk) {
+    font-size: 4.4rem;
+  }
+
   @include respond(tab-land) {
     font-size: 4.4rem;
   }
@@ -305,6 +384,10 @@ body {
 }
 
 .radio-font {
+  @include respond(4k-desk) {
+    font-size: 3.4rem;
+  }
+
   @include respond(tab-land) {
     font-size: 3rem;
   }
@@ -314,6 +397,10 @@ body {
   color: $color-grey;
   font-size: 1.2rem;
 
+  @include respond(4k-desk) {
+    font-size: 3.2rem;
+  }
+
   @include respond(tab-land) {
     font-size: 3rem;
   }
@@ -322,6 +409,10 @@ body {
 .dash-font {
   font-size: $font-small;
   font-weight: bold;
+
+  @include respond(4k-desk) {
+    font-size: 3.4rem;
+  }
 
   @include respond(tab-land) {
     font-size: 2.4rem;
@@ -333,6 +424,10 @@ body {
 
   &-header {
     font-size: $default-font;
+
+    @include respond(4k-desk) {
+      font-size: 3.6rem;
+    }
 
     @include respond(tab-land) {
       font-size: 2.6rem;
@@ -353,6 +448,10 @@ body {
   font-size: 2.4rem;
   font-weight: $bold;
 
+  @include respond(4k-desk) {
+    font-size: 4.4rem;
+  }
+
   @include respond(tab-land) {
     font-size: 5.4rem;
   }
@@ -362,6 +461,10 @@ body {
   font-size: 2.4rem;
   font-weight: 600;
 
+  @include respond(4k-desk) {
+    font-size: 4.4rem;
+  }
+
   @include respond(tab-land) {
     font-size: 3.4rem;
   }
@@ -369,6 +472,10 @@ body {
 
 .about-font {
   font-size: $font-big;
+
+  @include respond(4k-desk) {
+    font-size: 3.4rem;
+  }
 
   @include respond(tab-land) {
     font-size: 2.6rem;
@@ -379,8 +486,18 @@ body {
   }
 }
 
+.search-title {  
+  @include respond(4k-desk) {
+    font-size: 3.4rem; 
+  }
+}
+
 .info-font {
   font-size: $font-small;
+
+  @include respond(4k-desk) {
+    font-size: 2.8rem;
+  }
 
   @include respond(tab-land) {
     font-size: 2.6rem;
@@ -403,6 +520,10 @@ body {
     font-size: $font-big;
     font-weight: $bold;
 
+    @include respond(4k-desk) {
+      font-size: 3.2rem;
+    }
+
     @include respond(tab-land) {
       font-size: 2.8rem;
     }
@@ -417,6 +538,10 @@ body {
   font-size: $font-big;
   font-weight: $bold;
 
+  @include respond(4k-desk) {
+    font-size: 3.8rem;
+  }
+
   @include respond(tab-land) {
     font-size: 2.8rem;
   }
@@ -426,11 +551,15 @@ body {
   }
 
   @include respond(nex-7) {
-    font-size: 3.4rem; 
+    font-size: 3.4rem;
   }
 
   &-sub {
     font-size: 1.2rem;
+
+    @include respond(4k-desk) {
+      font-size: 3.2rem;
+    }
 
     @include respond(tab-land) {
       font-size: 2.2rem;
@@ -443,6 +572,10 @@ body {
 }
 
 .inner-font {
+  @include respond(4k-desk) {
+    font-size: 3.6rem;
+  }
+
   @include respond(tab-land) {
     font-size: 2.6rem;
   }
@@ -455,6 +588,10 @@ body {
     color: $color-grey;
     font-size: $font-big;
     font-weight: $bold;
+
+    @include respond(4k-desk) {
+      font-size: 3.8rem;
+    }
 
     @include respond(tab-land) {
       font-size: 2.8rem;
@@ -474,6 +611,10 @@ body {
   font-size: $font-big;
   font-weight: $bold;
 
+  @include respond(4k-desk) {
+    font-size: 3.8rem; 
+  }
+
   @include respond(tab-land) {
     font-size: 2.8rem;
   }
@@ -491,8 +632,16 @@ body {
   letter-spacing: 2px;
   color: $color-white;
 
+  @include respond(4k-desk) {
+    font-size: 3rem;
+  }
+
   &-copyright {
     font-size: $font-small;
+
+    @include respond(4k-desk) {
+      font-size: 2.4rem;
+    }
 
     @include respond(nex-7) {
       font-size: 2.2rem;

@@ -16,6 +16,10 @@
     height: 37rem;
     object-fit: cover;
     width: 100%;
+
+    @include respond(4k-desk) {
+      height: 60rem;    
+    }
   }
 
   &__info {
@@ -37,6 +41,10 @@
       margin-bottom: 3%;
       padding: 0 1.5%;
       width: 25%;
+
+      @include respond(4k-desk) {
+        height: 34rem; 
+      }
 
       @include respond(mic-l) {
         height: 32rem;

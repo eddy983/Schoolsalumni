@@ -27,6 +27,10 @@
     &__icon {
       height: 3rem;
 
+      @include respond(4k-desk) {
+        height: 6rem;   
+      }
+
       @include respond(mic-l) {
         height: 5rem;
       }

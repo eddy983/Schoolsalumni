@@ -4,6 +4,10 @@
   background-color: #060835;
   height: 6rem;
   padding: 0 6.7rem; 
+  
+  @include respond(4k-desk) {
+    height: 10rem;           
+  }
 
   &--land {
     background-color: rgba(0, 0, 0, 0.6);
@@ -34,6 +38,10 @@
     list-style-type: none;
     &:not(:last-child) {
       margin-right: 1.8rem;
+
+      @include respond(4k-desk) {
+        margin-right: 3.8rem;   
+      }
     }
   }
 

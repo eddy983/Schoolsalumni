@@ -1,6 +1,19 @@
 .product {
   @include margin-land; 
 
+  &__logo {
+    display: block;
+    margin: auto; 
+
+    @include respond(4k-desk) {
+      height: 13rem; 
+    }
+
+    @include respond(pix-2) {
+      height: 10rem; 
+    }
+  }
+
   &__title {
     width: 100%;
 

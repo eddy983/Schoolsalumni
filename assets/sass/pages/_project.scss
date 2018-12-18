@@ -1,5 +1,9 @@
 .project {
-  @include margin;    
+  @include margin;   
+  
+  &__logo {
+    @include logo-margin;   
+  }
 
   &__header {
     @include flexbox();
@@ -133,6 +137,10 @@
       margin-top: 2%;
 
       &__pic {
+        @include respond(4k-desk) {
+          height: 3.2rem;
+        }
+
         @include respond(tab-land) {
           height: 5rem;  
         }
@@ -198,6 +206,12 @@
     &__radio {
       height: 20px;
       width: 20px;
+
+      @include respond(4k-desk) {
+        height: 36px;
+        margin-right: 1rem; 
+        width: 36px;
+      }
 
       @include respond (tab-land) {
         height: 40px;

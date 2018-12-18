@@ -1,14 +1,14 @@
 /* DEMO 5 */
 
-.wrapper-dropdown{
-  padding: 0 6%;      
+.wrapper-dropdown {
+  padding: 0 6%;
 }
 
 .wrapper-dropdown-5 {
   /* Size & position */
-  
+
   position: relative;
-  width: 14rem;         
+  width: 14rem;
   margin: 0 0 0 auto;
   padding: 12px 15px;
 
@@ -21,13 +21,19 @@
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 
+  @include respond(4k-desk) {
+    font-size: 3.4rem;
+    width: 28rem;  
+  }
+
   @include respond(tab-land) {
-    font-size: 3.8rem;      
-    width: 30rem;       
+    font-size: 3.8rem;
+    width: 30rem;
   }
 }
 
-.wrapper-dropdown-5:after { /* Little arrow */
+.wrapper-dropdown-5:after {
+  /* Little arrow */
   content: "";
   width: 0;
   height: 0;
@@ -37,11 +43,16 @@
   margin-top: -5px;
   border-width: 6px 6px 0 6px;
   border-style: solid;
-  border-color: $color-orange transparent; 
-  
+  border-color: $color-orange transparent;
+
+  @include respond(4k-desk) {
+    border-width: 18px 18px 0 18px;
+    margin-top: -12px;
+  }
+
   @include respond(tab-land) {
     margin-top: -1.3rem;
-    border-width: 2rem 2rem 0 2rem;              
+    border-width: 2rem 2rem 0 2rem;
   }
 }
 
@@ -55,7 +66,7 @@
   /* Styles */
   background: #fff;
   border-radius: 0 0 5px 5px;
-  border: 1px solid rgba(0,0,0,0.2);
+  border: 1px solid rgba(0, 0, 0, 0.2);
   border-top: none;
   border-bottom: none;
   list-style: none;
@@ -71,7 +82,7 @@
 }
 
 .wrapper-dropdown-5 .dropdown li {
-  padding: 0 10px ;
+  padding: 0 10px;
 }
 
 .wrapper-dropdown-5 .dropdown li a {
@@ -96,7 +107,7 @@
 /* Hover state */
 
 .wrapper-dropdown-5 .dropdown li:hover a {
-  color: rgba(228, 174, 72, 0.62);          
+  color: rgba(228, 174, 72, 0.62);
 }
 
 /* Active state */
@@ -110,24 +121,23 @@
 }
 
 .wrapper-dropdown-5.active:after {
-  border-color: $color-white transparent;       
+  border-color: $color-white transparent;
 }
 
 .wrapper-dropdown-5.active .dropdown {
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   max-height: 400px;
 }
 
 /* No CSS3 support: none */
-
 
 /* DEMO 5 */
 
 .wrapper-dropdown-5:focus {
   border-radius: 5px 5px 0 0;
   background: $color-orange;
-  box-shadow: none;    
-  border-bottom: none; 
+  box-shadow: none;
+  border-bottom: none;
   color: white;
 }
 
@@ -136,6 +146,6 @@
 }
 
 .wrapper-dropdown-5:focus .dropdown {
-  border-bottom: 1px solid rgba(0,0,0,0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   max-height: 400px;
 }

@@ -28,6 +28,7 @@
     height: 50vh;
   }
 }
+
 @mixin margin {
   margin: 0 20%;
 
@@ -70,7 +71,7 @@
 
 @mixin center-title {
   display: block;
-  margin: 0 auto;
+  margin: 8% auto;
   width: fit-content;
 }
 
@@ -173,6 +174,11 @@
   letter-spacing: 0.64px;
   outline: 0;
 
+  @include respond(4k-desk) {
+    font-size: 2.8rem;
+    height: 8.8rem; 
+  }
+
   @include respond(tab-land) {
     font-size: 2.2rem;
     height: 6.8rem;
@@ -194,6 +200,11 @@
   padding: 1rem;
   width: 100%;
 
+  @include respond(4k-desk) {
+    font-size: 2.8rem;
+    padding: 2rem;       
+  }
+
   @include respond(tab-land) {
     font-size: 3.4rem;
   }
@@ -201,11 +212,21 @@
 
 @mixin school-margin {
   margin: 0 5.4%;
+
+   
+  @include respond(4k-desk) {  
+    margin: 0 10.4%;                                 
+  }
 }
 
 @mixin icon-size {
   height: 1.8rem;
   width: 1.8rem;
+
+  @include respond(4k-desk) {
+    height: 3.8rem; 
+    width: 3.8rem;
+  }
 
   @include respond(tab-land) {
     height: 2.8rem;
@@ -216,6 +237,10 @@
     height: 3.8rem;
     width: 3.8rem;
   }
+}
+
+@mixin logo-margin {
+  margin: 6% 0 8% 0;
 }
 
 // MEDIA QUERY MANAGER
@@ -341,7 +366,7 @@ $breakpoint arguement choices:
     } // 2560px in em
   }
   @if $breakpoint == 4k-desk {
-    @media (min-width: 160em) {
+    @media (min-width: 160em) {        
       @content;
     } // 2560px in em
   }

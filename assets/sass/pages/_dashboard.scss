@@ -133,6 +133,10 @@
      height: 14.4rem;
      width: 100%;
 
+     @include respond(4k-desk) {
+       height: 28.4rem;
+     }
+
      @include respond(tab-land) {
        height: 21.4rem; 
      }

@@ -19,6 +19,11 @@
     letter-spacing: 0.64px;
     padding: 0.6rem 2.5rem;
 
+    @include respond(4k-desk) {
+      font-size: 3.4rem;
+      padding: 1rem 4.5rem;
+    }
+
     @include respond(tab-land) {
       font-size: 2.4rem;
       padding: 1rem 2.5rem;
@@ -42,6 +47,11 @@
     font-size: $font-small;
     letter-spacing: 0.64px;
     text-transform: uppercase;
+
+    @include respond(4k-desk) {
+      font-size: 3.4rem;
+      padding: 1rem 0;
+    }
 
     @include respond(tab-land) {
       font-size: 2.2rem;
@@ -68,6 +78,11 @@
     font-size: 2rem;
     padding: 1rem 2.9rem;
     transition: 0.2s ease-in;
+
+    @include respond(4k-desk) {
+      font-size: 6rem;
+      padding: 1.8rem 8rem;
+    }
 
     @include respond(tab-land) {
       font-size: $font-bigger;
@@ -101,6 +116,11 @@
     margin: 5% auto;
     padding: 1.1rem 3.5rem;
 
+    @include respond(4k-desk) {
+      font-size: 4rem;
+      padding: 3rem 9.5rem;
+    }
+
     @include respond(tab-land) {
       font-size: $font-bigger;
       padding: 2.1rem 4.5rem;
@@ -124,6 +144,11 @@
     margin: 6% auto 0 auto;
     padding: 1.2rem 2.6rem;
 
+    @include respond(4k-desk) {
+      font-size: 4rem;
+      padding: 3rem 9.5rem;
+    }
+
     @include respond(tab-land) {
       font-size: $font-bigger;
       padding: 2.2rem 3.6rem;
@@ -139,6 +164,11 @@
     background-color: $color-blue2;
     font-size: $font-big;
     padding: 1rem 3.4rem;
+
+    @include respond(4k-desk) {
+      font-size: 3.4rem;
+      padding: 1.5rem 5.4rem;
+    }
 
     @include respond(tab-land) {
       font-size: 3.4rem;
@@ -163,6 +193,10 @@
     color: $color-orange;
     margin-left: 1%;
 
+    @include respond(4k-desk) {
+      font-size: 3.2rem;
+    }
+
     @include respond(tab-land) {
       font-size: 3rem;
       margin-left: 2%;
@@ -180,6 +214,10 @@
     margin-top: 2%;
     padding: 1rem 2rem;
 
+    @include respond(4k-desk) {
+      font-size: 3.6rem;
+    }
+
     @include respond(tab-land) {
       font-size: 3rem;
       margin-top: 3%;
@@ -195,6 +233,11 @@
     padding: 0.8rem 0;
     width: 34%;
 
+    @include respond(4k-desk) {
+      font-size: 3.6rem;
+      padding: 2rem 0;
+    }
+
     @include respond(tab-land) {
       font-size: 3rem;
       margin-top: 4%;
@@ -208,6 +251,10 @@
     color: $color-black;
     font-weight: normal;
     margin-left: 0.5%;
+
+    @include respond(4k-desk) {
+      font-size: 2.8rem;
+    }
 
     @include respond(tab-land) {
       font-size: 2.5rem;
@@ -227,6 +274,11 @@
     margin-top: 4%;
     padding: 0.8rem 10rem;
 
+    @include respond(4k-desk) {
+      font-size: 3.8rem;
+      padding: 2rem 14rem;
+    }
+
     @include respond(tab-land) {
       font-size: 4.4rem;
       margin-top: 8%;
@@ -240,12 +292,21 @@
     margin-top: 4%;
     padding: 1rem 6.4rem;
 
+    @include respond(4k-desk) {
+      font-size: 3.4rem;
+      padding: 2rem 12.4rem;
+    }
+
     @include respond(tab-land) {
       font-size: 3.4rem;
       margin: 6% 0 16% 0;
       padding: 1.5rem 6.4rem;
     }
 
+    @include respond(f-hxd) {
+      margin: 6% 0 48% 0; 
+    }
+    
     @include respond(nex-7) {
       margin: 10% 0 28% 0;
     }
@@ -259,6 +320,11 @@
     background-color: $color-blue2;
     fill: $color-white;
     padding: 0 0.9rem;
+
+    @include respond(4k-desk) {
+      height: 6.4rem;
+      padding: 0 3.2rem;
+    }
 
     @include respond(tab-land) {
       padding: 0 2rem;
@@ -278,6 +344,11 @@
     font-size: $font-small;
     padding: 0.8rem 0;
 
+    @include respond(4k-desk) {
+      font-size: 3.2rem;
+      padding: 1.2rem 0;
+    }
+
     @include respond(tab-land) {
       font-size: 2.8rem;
       padding: 1rem 0;
@@ -294,6 +365,13 @@
     font-size: 1.4rem;
     padding: 1rem 0;
     width: 22%;
+
+    @include respond(4k-desk) {
+      font-size: 2.4rem;
+      padding: 2rem 0;
+      margin-top: 4%;
+      width: 26%;
+    }
 
     @include respond(tab-land) {
       font-size: 3.4rem;
@@ -313,6 +391,11 @@
     font-size: 2rem;
     margin-top: 3%;
     padding: 1rem 1.5rem;
+
+    @include respond(4k-desk) {
+      font-size: 3rem;
+      padding: 2rem 4.5rem;
+    }
 
     @include respond(tab-land) {
       font-size: 3.8rem;
@@ -352,6 +435,10 @@
     font-weight: $bold;
     letter-spacing: 0.04em;
 
+    @include respond(4k-desk) {
+      font-size: 3.8rem;
+    }
+
     @include respond(tab-land) {
       font-size: 3.6rem;
       height: 100%;
@@ -361,13 +448,13 @@
     @include respond(nex-7) {
       @include flexbox();
       @include align-items(center);
-       
+
       font-size: 3.4rem;
       padding: 0 1.8rem;
     }
 
     @include respond(nex-4) {
-      font-size: 2.9rem;           
+      font-size: 2.9rem;
     }
 
     @include respond(s-phone) {
@@ -401,6 +488,11 @@
 
     padding: 1.2rem 3.8rem;
 
+    @include respond(4k-desk) {
+      font-size: 3.8rem;
+      padding: 2.2rem 6.8rem;
+    }
+
     @include respond(tab-land) {
       font-size: 4.8rem;
       margin-top: 6%;
@@ -419,6 +511,11 @@
     padding: 1rem 0;
     margin-top: 8%;
     width: 100%;
+
+    @include respond(4k-desk) {
+      font-size: 3.6rem;
+      padding: 2rem 0;   
+    }
 
     @include respond(tab-land) {
       font-size: 3.6rem;
@@ -439,6 +536,11 @@
     margin: 8% auto;
     padding: 1rem 5.4rem;
 
+    @include respond(4k-desk) {
+      font-size: 4rem;
+      padding: 2rem 12.4rem;
+    }
+
     @include respond(tab-land) {
       font-size: 4rem;
       padding: 2rem 12.4rem;
@@ -451,6 +553,11 @@
     margin-top: 3%;
     padding: 1.2rem 0;
     width: 48%;
+
+    @include respond(4k-desk) {
+      font-size: 3.8rem;
+      padding: 2.2rem 0;  
+    }
 
     @include respond(tab-land) {
       font-size: 3.8rem;
@@ -471,6 +578,11 @@
     padding: 1rem 5.6rem;
     margin: 3% auto;
 
+    @include respond(4k-desk) {
+      font-size: 3.2rem;
+      padding: 2rem 10.6rem;
+    }
+
     @include respond(tab-land) {
       font-size: 3.2rem;
       padding: 2rem 9.6rem;
@@ -478,7 +590,7 @@
 
     @include respond(nex-7) {
       font-size: 4.2rem;
-      padding: 3.5rem 5.6rem; 
+      padding: 3.5rem 5.6rem;
       width: 100%;
     }
   }
@@ -486,25 +598,30 @@
   &__sort {
     font-size: $default-font;
     margin-left: 1.5%;
-    padding: 0 1.2rem;     
+    padding: 0 1.2rem;
+
+    @include respond(4k-desk) {
+      font-size: 3rem;
+      padding: 0 2.2rem;
+    }
 
     @include respond(tab-land) {
-      font-size: 2.8rem; 
-      padding: 0 6.2rem; 
+      font-size: 2.8rem;
+      padding: 0 6.2rem;
     }
 
     @include respond(nex-7) {
-      font-size: 3rem;   
-      margin-left: 3%;  
-      width: 36%; 
+      font-size: 3rem;
+      margin-left: 3%;
+      width: 36%;
     }
 
     @include respond(m-phone) {
-      font-size: 2.6rem;    
+      font-size: 2.6rem;
     }
 
     @include respond(s-phone) {
-      width: 44%; 
+      width: 44%;
     }
   }
 }
