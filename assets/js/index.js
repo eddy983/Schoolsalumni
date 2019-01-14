@@ -26,6 +26,31 @@ $(document).ready(function() {
   });
 });
 
+
+
+//? For charater limit of project description
+// <![CDATA[
+$(function () {
+  $(".description-font").each(function (i) {
+    len = $(this).text().length;
+    if (len > 440) {
+      $(this).text(
+        $(this)
+          .text()
+          .substr(0, 440) + "..."
+      );
+    }
+  });
+});
+      // ]]>
+
+//? To show charater limit in textarea
+var maxLength = 440;
+$("textarea").keyup(function() {
+  var textlen = maxLength - $(this).val().length;
+  $("#rchars").text(textlen);
+});
+
 // ? For pagination
 var header = document.getElementById("myDIV");
 var btns = header.getElementsByClassName("btns");
@@ -326,3 +351,17 @@ for (var i = 0; i < btns.length; i++) {
   });
 }
 
+// <![CDATA[
+$(function () {
+  $(".description-font").each(function (i) {
+    len = $(this).text().length;
+    if (len > 40) {
+      $(this).text(
+        $(this)
+          .text()
+          .substr(0, 40) + "..."
+      );
+    }
+  });
+});
+      // ]]>

@@ -17,13 +17,12 @@
     @include justify-content(center);
 
     background-color: #0d0e18;
-    // border-radius: 0% 70% 70% 0% / 0% 58% 58% 100%;
+    clip-path: ellipse(85% 70% at 15% 58%);
     height: 100vh;
     padding: 0 0 0 6.7rem;
     width: 22%;
 
-    //! Remove later
-    clip-path: ellipse(85% 70% at 15% 58%);
+   
 
     @include respond(tab-land) {
       @include align-items(center);
