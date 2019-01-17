@@ -43,6 +43,18 @@ $(function () {
   });
 });
       // ]]>
+// <![CDATA[
+$(function () {
+  $(".profile-font").each(function(i) {
+    len = $(this).text().length;
+    if (len > 17) {
+      $(this).text($(this)
+          .text()
+          .substr(0, 17) + "...");
+    }
+  });
+});
+      // ]]>
 
 //? To show charater limit in textarea
 var maxLength = 440;

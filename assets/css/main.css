@@ -539,6 +539,17 @@ body {
     .gallery-title {
       font-size: 3.4rem; } }
 
+.profile-font {
+  display: inline; }
+  @media (min-width: 160em) {
+    .profile-font {
+      font-size: 3.4rem;
+      width: 28rem; } }
+  @media (max-width: 64em) {
+    .profile-font {
+      font-size: 3.8rem;
+      width: 30rem; } }
+
 .footer-font {
   letter-spacing: 2px;
   color: #fff; }
@@ -1245,7 +1256,8 @@ body {
 
 /* DEMO 5 */
 .wrapper-dropdown {
-  padding: 0 6%; }
+  padding: 0 6%;
+  width: 100%; }
 
 .wrapper-dropdown-5 {
   /* Size & position */
@@ -1269,6 +1281,21 @@ body {
     .wrapper-dropdown-5 {
       font-size: 3.8rem;
       width: 30rem; } }
+  @media (max-width: 64em) {
+    .wrapper-dropdown-5 {
+      width: 100%; } }
+  @media (max-width: 40em) {
+    .wrapper-dropdown-5 {
+      width: 72%; } }
+  @media (max-width: 40em) {
+    .wrapper-dropdown-5 {
+      width: 72%; } }
+  @media (max-width: 30em) {
+    .wrapper-dropdown-5 {
+      width: 90%; } }
+  @media (max-width: 20em) {
+    .wrapper-dropdown-5 {
+      width: 100%; } }
 
 .wrapper-dropdown-5:after {
   /* Little arrow */
@@ -2077,10 +2104,10 @@ body {
     -webkit-justify-content: center;
     justify-content: center;
     background-color: #0d0e18;
+    clip-path: ellipse(85% 70% at 15% 58%);
     height: 100vh;
     padding: 0 0 0 6.7rem;
-    width: 22%;
-    clip-path: ellipse(85% 70% at 15% 58%); }
+    width: 22%; }
     @media (max-width: 64em) {
       .dashboard__menu {
         -webkit-box-align: center;

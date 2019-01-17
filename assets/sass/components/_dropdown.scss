@@ -2,6 +2,7 @@
 
 .wrapper-dropdown {
   padding: 0 6%;
+  width: 100%;   
 }
 
 .wrapper-dropdown-5 {
@@ -30,6 +31,26 @@
     font-size: 3.8rem;
     width: 30rem;
   }
+
+  @include respond(tab-land) {
+    width: 100%;   
+  }
+
+  @include respond(mic-l) {
+    width: 72%;      
+  }
+
+  @include respond(mic-l) {
+    width: 72%;      
+  }
+
+  @include respond(nex-9) {
+    width: 90%;        
+  }
+
+  @include respond(s-phone) {
+    width: 100%;          
+  }
 }
 
 .wrapper-dropdown-5:after {
@@ -54,7 +75,9 @@
     margin-top: -1.3rem;
     border-width: 2rem 2rem 0 2rem;
   }
-}
+  
+  
+}    
 
 .wrapper-dropdown-5 .dropdown {
   /* Size & position */

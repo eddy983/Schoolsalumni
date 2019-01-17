@@ -628,6 +628,20 @@ body {
   }
 }
 
+.profile-font {
+  display: inline;        
+             
+  @include respond(4k-desk) {
+    font-size: 3.4rem;
+    width: 28rem;  
+  }
+
+  @include respond(tab-land) { 
+    font-size: 3.8rem;
+    width: 30rem;
+  }
+}
+
 .footer-font {
   letter-spacing: 2px;
   color: $color-white;
