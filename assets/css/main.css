@@ -1170,7 +1170,9 @@ body {
     display: block;
     font-size: 1.8rem;
     padding: 1rem 5.6rem;
-    margin: 3% auto; }
+    margin: 3% 0; }
+    .btn__gallery:not(:first-child) {
+      margin-left: 3%; }
     @media (min-width: 160em) {
       .btn__gallery {
         font-size: 3.2rem;
@@ -1184,6 +1186,10 @@ body {
         font-size: 4.2rem;
         padding: 3.5rem 5.6rem;
         width: 100%; } }
+    @media (max-width: 24em) {
+      .btn__gallery:not(:first-child) {
+        margin-left: 0;
+        margin-top: 8%; } }
   .btn__sort {
     font-size: 1.6rem;
     margin-left: 1.5%;
@@ -1262,7 +1268,7 @@ body {
 .wrapper-dropdown-5 {
   /* Size & position */
   position: relative;
-  width: 14rem;
+  width: 24rem;
   margin: 0 0 0 auto;
   padding: 12px 15px;
   /* Styles */
@@ -2314,6 +2320,20 @@ body {
       height: 100%;
       object-fit: cover;
       width: 100%; }
+  .inner__buttons {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
+    @media (max-width: 24em) {
+      .inner__buttons {
+        display: block; } }
 
 .project {
   margin: 0 20%; }

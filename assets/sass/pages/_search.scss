@@ -109,7 +109,7 @@
 
       @include respond(4k-desk) {
         height: 30.2rem;
-        padding: 2.6rem 1.8rem 1.8rem 1.8rem;
+        padding: 2.6rem 1.8rem 1.8rem 1.8rem; 
       }
 
       @include respond(tab-land) {

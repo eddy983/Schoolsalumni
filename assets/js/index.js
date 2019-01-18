@@ -28,8 +28,8 @@ $(document).ready(function() {
 
 
 
-//? For charater limit of project description
-// <![CDATA[
+//? For charater limit
+// <![Description[
 $(function () {
   $(".description-font").each(function (i) {
     len = $(this).text().length;
@@ -43,7 +43,7 @@ $(function () {
   });
 });
       // ]]>
-// <![CDATA[
+// <![Profile[
 $(function () {
   $(".profile-font").each(function(i) {
     len = $(this).text().length;
@@ -51,6 +51,18 @@ $(function () {
       $(this).text($(this)
           .text()
           .substr(0, 17) + "...");
+    }
+  });
+});
+      // ]]>
+// <![Profile[
+$(function () {
+  $(".box-font-title").each(function(i) {
+    len = $(this).text().length;
+    if (len > 45) {
+      $(this).text($(this)
+          .text()
+          .substr(0, 45) + "...");
     }
   });
 });
@@ -362,18 +374,3 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " actives";
   });
 }
-
-// <![CDATA[
-$(function () {
-  $(".description-font").each(function (i) {
-    len = $(this).text().length;
-    if (len > 40) {
-      $(this).text(
-        $(this)
-          .text()
-          .substr(0, 40) + "..."
-      );
-    }
-  });
-});
-      // ]]>
