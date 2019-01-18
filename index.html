@@ -1,227 +1,299 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans:100,300,400,500,600,700"
+      rel="stylesheet"
+    />
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open Sans:100,300,400,500,600,700" rel="stylesheet">
+    <!-- ! Remember to change -->
+    <link rel="shortcut icon" href="assets/img/Logo.svg" type="image/x-icon" />
 
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-  <!-- ! Remember to change -->
-  <link rel="shortcut icon" href="assets/img/Logo.svg" type="image/x-icon">
+    <title>Schoolsalumni</title>
+  </head>
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="assets/css/main.css">
-
-  <title>Schoolsalumni</title>
-</head>
-
-<body>
-
-  <!-- Respondsive Navigation -->
-  <div class="header__responsive-nav">
-    <!-- overlay -->
-    <div id="search">
-      <a href="#" id="close-btn">
-        <em class="fa fa-times"></em>
-      </a>
-      <input placeholder="type here" id="searchbox" type="search" />
-    </div>
-    <!--- /overlay -->
-    <nav class="nav">
-      <a href="#">
-        <img src="assets/img/menu.svg" alt="" class="nav__burger">
-      </a>
-      <input type="checkbox" class="nav__checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="nav__button">Men</label>
-
-      <div class="nav__background">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__bar__link nav-font">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="about-us.html" class="nav__bar__link nav-font">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="projects(all).html" class="nav__bar__link nav-font">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a href="contact-us.html" class="nav__bar__link nav-font">Contact us</a>
-          </li>
-          <li class="nav__item">
-            <button class="btn btn__fund">Fund a project</button>
-          </li>
-          <li class="nav__item">
-            <button class="btn btn__nav" onclick="window.location.href='login.html'">Log in</button>
-          </li>
-        </ul>
+  <body>
+    <!-- Respondsive Navigation -->
+    <div class="header__responsive-nav">
+      <!-- overlay -->
+      <div id="search">
+        <a href="#" id="close-btn"> <em class="fa fa-times"></em> </a>
+        <input placeholder="type here" id="searchbox" type="search" />
       </div>
+      <!--- /overlay -->
+      <nav class="nav">
+        <a href="#">
+          <img src="assets/img/menu.svg" alt="" class="nav__burger" />
+        </a>
+        <input type="checkbox" class="nav__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="nav__button">Men</label>
 
-      <!-- trigger search with a link to an anchor -->
-      <a class="fr nav__search-btn" href='#search'>
-        <em class="fa fa-search"></em>
-      </a>
-      <!-- /trigger search with a link to an anchor -->
+        <div class="nav__background">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__bar__link nav-font">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="about-us.html" class="nav__bar__link nav-font">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="projects(all).html" class="nav__bar__link nav-font"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="contact-us.html" class="nav__bar__link nav-font"
+                >Contact us</a
+              >
+            </li>
+            <li class="nav__item">
+              <button class="btn btn__fund">Fund a project</button>
+            </li>
+            <li class="nav__item">
+              <button
+                class="btn btn__nav"
+                onclick="window.location.href='login.html'"
+              >
+                Log in
+              </button>
+            </li>
+          </ul>
+        </div>
 
+        <!-- trigger search with a link to an anchor -->
+        <a class="fr nav__search-btn" href="#search">
+          <em class="fa fa-search"></em>
+        </a>
+        <!-- /trigger search with a link to an anchor -->
+      </nav>
+    </div>
+
+    <nav class="nav__bar nav__bar--land">
+      <ul class="nav__bar__items">
+        <li class="nav__bar__item">
+          <a href="index.html" class="nav__bar__link nav-font active"> Home </a>
+          <div class="nav__bar__link__line"></div>
+        </li>
+        <li class="nav__bar__item">
+          <a href="about-us.html" class="nav__bar__link nav-font"> About </a>
+          <div class="nav__bar__link__line"></div>
+        </li>
+        <li class="nav__bar__item">
+          <a href="projects(all).html" class="nav__bar__link nav-font">
+            Projects
+          </a>
+          <div class="nav__bar__link__line"></div>
+        </li>
+        <li class="nav__bar__item">
+          <a href="contact-us.html" class="nav__bar__link nav-font">
+            Contact us
+          </a>
+          <div class="nav__bar__link__line"></div>
+        </li>
+        <li class="nav__bar__item">
+          <button
+            onclick="window.location.href='search.html'"
+            class="btn btn__fund"
+          >
+            Fund a project
+          </button>
+        </li>
+        <li class="nav__bar__item">
+          <button
+            onclick="window.location.href='login.html'"
+            class="btn btn__nav"
+          >
+            Log in
+          </button>
+        </li>
       </ul>
     </nav>
-  </div>
 
-  <nav class="nav__bar nav__bar--land">
-    <ul class="nav__bar__items">
-      <li class="nav__bar__item">
-        <a href="index.html" class="nav__bar__link nav-font active">
-          Home
-        </a>
-        <div class="nav__bar__link__line"></div>
-      </li>
-      <li class="nav__bar__item">
-        <a href="about-us.html" class="nav__bar__link nav-font">
-          About
-        </a>
-        <div class="nav__bar__link__line"></div>
-      </li>
-      <li class="nav__bar__item">
-        <a href="projects(all).html" class="nav__bar__link nav-font">
-          Projects
-        </a>
-        <div class="nav__bar__link__line"></div>
-      </li>
-      <li class="nav__bar__item">
-        <a href="contact-us.html" class="nav__bar__link nav-font">
-          Contact us
-        </a>
-        <div class="nav__bar__link__line"></div>
-      </li>
-      <li class="nav__bar__item">
-        <button onclick="window.location.href='search.html'" class="btn btn__fund">Fund a project</button>
-      </li>
-      <li class="nav__bar__item">
-        <button onclick="window.location.href='login.html'" class="btn btn__nav">Log in</button>
-      </li>
-    </ul>
-  </nav>
+    <div class="header">
+      <div class="header__background"></div>
 
-  <div class="header">
-    <div class="header__background"></div>
-   
-    <img src="assets/img/Banner_optimized.jpg" srcset="assets/img/Banner_optimized.jpg 1x, assets/img/Banner.jpg 2x" alt="Banner" class="header__image"> 
-    
-    <div class="header__text">
-      <h1 class="header-font">Help Make an Impact in Education in Nigeria</h1>
+      <img
+        src="assets/img/Banner_optimized.jpg"
+        srcset="assets/img/Banner_optimized.jpg 1x, assets/img/Banner.jpg 2x"
+        alt="Banner"
+        class="header__image"
+      />
+
+      <div class="header__text">
+        <h1 class="header-font">Help Make an Impact in Education in Nigeria</h1>
+      </div>
+      <div class="header__button">
+        <a href="#service" class="btn btn__header">Learn How</a>
+      </div>
     </div>
-    <div class="header__button">
-      <a href="#service" class="btn btn__header">Learn How</a >
-    </div>
-  </div>
-  <section class="problem">
-    <div class="problem__statement">
-      <div class="problem__text">
-        <h4 class="landing-font landing-font-header">
-          Imagine you couldn't read anything on this page. Imagine walking down the street, not being able to read
-          signs or being able to add up your wages.<span class="orange-color"> Where would you be today?</span>
-        </h4>
-        <p class="land-margin landing-font">
-          Public high schools in Nigeria have practically collapsed over the years because of poor funding leaving
-          millions of children out of school as well as receiving poor education. Nigeria has the highest number of
-          children out of school in the world. 80% of Nigerian children who complete primary school cannot read.
-        </p>
-        <p class="land-margin2 landing-font">
-          Make a donation today to not only give children the chance to go to school, but also save their lives and protect their childhoods. 
+    <section class="problem">
+      <div class="problem__statement">
+        <div class="problem__text">
+          <p class="landing-font">
+            Majority of students in Nigeria attend public schools. It is rather
+            disheartening that most of the children who are in these schools are
+            not learning. There is a massive learning crisis and all education
+            indices are poor: learning outcomes, literacy levels etc. and even
+            after 6 years of primary education, majority cannot read and write.
+          </p>
+          <p class="land-margin landing-font"></p>
+          <p class="land-margin2 landing-font">
+            This however was the not the case many years ago as majority of
+            today’s leaders are products of public education. This clearly shows
+            that something is definitely missing in the public school system and
+            considering the importance of public education in Nigeria, there is
+            radical and desperate need to restore the lost glory in this system.
+          </p>
+          <h4 class="land-margin2 landing-font landing-font-header">
+            The journey starts <span class="orange-color">now!</span>
+          </h4>
+        </div>
+      </div>
+    </section>
+    <section class="product">
+      <!-- ! Remove later -->
+      <div class="project__logo">
+        <img src="assets/img/Logo.svg" alt="Logo" class="product__logo" />
+      </div>
+
+      <div class="product-margin product__title">
+        <p class="landing-font landing-font-title">What We Do</p>
+        <div class="product__title__line"></div>
+      </div>
+      <div class="product__text">
+        <p class="landing-font">
+          Schoolsalumni is a school project donation and execution platform
+          which allows projects to be carried out in schools across Nigeria to
+          make quality education accessible to children of low-income
+          background.
         </p>
       </div>
-
-    </div>
-  </section>
-  <section class="product">
-    <!-- ! Remove later -->
-    <img src="assets/img/Logo.svg" alt="Logo" class="product__logo">
-
-    <div class="product-margin product__title">
-      <p class="landing-font landing-font-title">What We Do</p>
-      <div class="product__title__line"></div>
-    </div>
-    <div class="product__text">
-      <p class="landing-font">
-        Schoolsalumni is a school project donation and execution platform which allows projects to be carried out in schools across Nigeria to make quality education accessible to children of low-income background.
-      </p>
-    </div>
-    <button class="btn btn__learn" onclick="window.location.href='about-us.html'">Learn More</button>
-  </section>
-  <section class="service" id="service">
-    <div class="service__title">
-      <p class="landing-font landing-font-title">How it Works</p>
-      <div class="service__title__line"></div>
-    </div>
-    <div class="service__boxes">
-      <div class="service__box">
-        <img src="assets/img/Create.svg" alt="Create" class="service__box__icon">
-        <div class="service__box__texts">
-          <a href="create.html" class="service__box__link">
-            <p class="service-font service-font-title">Create a Project</p>
-          </a>
-          <p class="service-margin service-font">Initiate a project in your school or other schools.</p>
+      <button
+        class="btn btn__learn"
+        onclick="window.location.href='about-us.html'"
+      >
+        Learn More
+      </button>
+    </section>
+    <section class="service" id="service">
+      <div class="service__title">
+        <p class="landing-font landing-font-title">How it Works</p>
+        <div class="service__title__line"></div>
+      </div>
+      <div class="service__boxes">
+        <div class="service__box">
+          <img
+            src="assets/img/Create.svg"
+            alt="Create"
+            class="service__box__icon"
+          />
+          <div class="service__box__texts">
+            <a href="create.html" class="service__box__link">
+              <p class="service-font service-font-title">Create a Project</p>
+            </a>
+            <p class="service-margin service-font">
+              Initiate a project in your school or other schools.
+            </p>
+          </div>
+        </div>
+        <div class="service__box">
+          <img
+            src="assets/img/Fund.svg"
+            alt="Create"
+            class="service__box__icon"
+          />
+          <div class="service__box__texts">
+            <a href="search.html" class="service__box__link">
+              <p class="service-font service-font-title">Fund Projects</p>
+            </a>
+            <p class="service-margin service-font">
+              Fund personally created projects or pick from available projects.
+            </p>
+          </div>
+        </div>
+        <div class="service__box">
+          <img
+            src="assets/img/Monitor.svg"
+            alt="Create"
+            class="service__box__icon"
+          />
+          <div class="service__box__texts">
+            <a href="dashboard.html" class="service__box__link">
+              <p class="service-font service-font-title">Monitor project</p>
+            </a>
+            <p class="service-margin service-font">
+              Get progress reports of ongoing projects.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="service__box">
-        <img src="assets/img/Fund.svg" alt="Create" class="service__box__icon">
-        <div class="service__box__texts">
-          <a href="search.html" class="service__box__link">
-            <p class="service-font service-font-title">Fund Projects</p>
-          </a>
-          <p class="service-margin service-font">Fund personally created projects or pick from available projects.</p>
+      <button
+        onclick="window.location.href='create.html'"
+        class="btn btn__start"
+      >
+        Get Started
+      </button>
+    </section>
+
+    <footer class="footer">
+      <div class="center-text">
+        <p class="footer-font">Connect with Us</p>
+        <div class="footer__icons">
+          <img
+            src="assets/img/facebook-logo.svg"
+            alt="Social Media"
+            class="footer__icons__icon"
+          />
+          <img
+            src="assets/img/twitter-social-logotype.svg"
+            alt="Social Media"
+            class="footer__icons__icon"
+          />
+          <img
+            src="assets/img/instagram.svg"
+            alt="Social Media"
+            class="footer__icons__icon"
+          />
+          <img
+            src="assets/img/linkedin-logo.svg"
+            alt="Social Media"
+            class="footer__icons__icon"
+          />
         </div>
+        <p class="footer-font footer-font-copyright">
+          <span><i class="fa fa-phone footer__contact"></i>+2349064519745</span>
+          <span>
+            <i class="fa fa-envelope footer__contact"></i>brownson121@gmail.com</span>
+        </p>
+        <p class="footer-font footer-font-copyright">
+          Copyright
+          <span
+            class="copyright-margin footer-font footer-font-copyright footer-font-copyright-icon"
+            >&copy;</span
+          >
+          2018 Schoolsalumni,All rights resevered.
+        </p>
       </div>
-      <div class="service__box">
-        <img src="assets/img/Monitor.svg" alt="Create" class="service__box__icon">
-        <div class="service__box__texts">
-          <a href="dashboard.html" class="service__box__link">
-            <p class="service-font service-font-title">Monitor project</p>
-          </a>
-          <p class="service-margin service-font">Get progress reports of ongoing projects.</p>
-        </div>
-      </div>
-    </div>
-    <button onclick="window.location.href='create.html'" class="btn btn__start">Get Started</button>
-  </section>
+    </footer>
 
+    <!-- Scripts -->
 
-  <footer class="footer">
-    <div class="center-text">
-      <p class="footer-font">Connect with Us</p>
-      <div class="footer__icons">
-        <img src="assets/img/facebook-logo.svg" alt="Social Media" class="footer__icons__icon">
-        <img src="assets/img/twitter-social-logotype.svg" alt="Social Media" class="footer__icons__icon">
-        <img src="assets/img/instagram.svg" alt="Social Media" class="footer__icons__icon">
-        <img src="assets/img/linkedin-logo.svg" alt="Social Media" class="footer__icons__icon">
-      </div>
-      <p class="footer-font footer-font-copyright">
-        </span> <i class="fa fa-phone footer__contact"></i>+2349064519745
-        </span> <i class="fa fa-envelope footer__contact"></i>brownson121@gmail.com
-      </p>
-      <p class="footer-font footer-font-copyright">Copyright
-        <span class="copyright-margin footer-font footer-font-copyright footer-font-copyright-icon">&copy;</span> 2018
-        Schoolsalumni,All
-        rights resevered.
-      </p>
-    </div>
-  </footer>
+    <script src="assets/plug-ins/js/fontawesome/all.js"></script>
 
+    <script src="assets/js/jquery.min.js"></script>
 
-
-  <!-- Scripts -->
-
-  <script src="assets/plug-ins/js/fontawesome/all.js"></script>
-
-  <script src="assets/js/jquery.min.js"></script>
-  
-  <script src="assets/js/index.js"></script>
-
-</body>
-
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>
