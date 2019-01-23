@@ -258,9 +258,23 @@ body {
   @media (max-width: 40em) {
     .box-font {
       font-size: 3rem; } }
-  .box-font-title {
-    font-weight: 600;
-    line-height: normal; }
+
+.box-font-title {
+  font-weight: 600;
+  line-height: normal;
+  font-size: 1.4rem; }
+  @media (min-width: 160em) {
+    .box-font-title {
+      font-size: 2.8rem; } }
+  @media (max-width: 64em) {
+    .box-font-title {
+      font-size: 1.8rem; } }
+  @media (max-width: 40em) {
+    .box-font-title {
+      font-size: 1.7rem; } }
+  @media (max-width: 40em) {
+    .box-font-title {
+      font-size: 3rem; } }
 
 .school-header {
   font-size: 2.2rem;
@@ -717,6 +731,7 @@ body {
   color: #fff;
   font-weight: 600;
   outline: 0;
+  text-align: center;
   text-decoration: none;
   transition: all 0.1s ease-in; }
   .btn:hover {
@@ -1282,7 +1297,7 @@ body {
   @media (min-width: 160em) {
     .wrapper-dropdown-5 {
       font-size: 3.4rem;
-      width: 28rem; } }
+      width: 46rem; } }
   @media (max-width: 64em) {
     .wrapper-dropdown-5 {
       font-size: 3.8rem;
@@ -1730,13 +1745,14 @@ body {
       margin: 0 6%; } }
   .product__logo {
     display: block;
+    height: 15rem;
     margin: auto; }
     @media (min-width: 160em) {
       .product__logo {
-        height: 13rem; } }
+        height: 16rem; } }
     @media (max-width: 25.6875em) {
       .product__logo {
-        height: 10rem; } }
+        height: 12rem; } }
   .product__title {
     width: 100%; }
     @media (max-width: 40em) {

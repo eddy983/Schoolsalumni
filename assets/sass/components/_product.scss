@@ -3,14 +3,15 @@
 
   &__logo {
     display: block;
+    height: 15rem;     
     margin: auto; 
 
     @include respond(4k-desk) {
-      height: 13rem; 
+      height: 16rem; 
     }
 
     @include respond(pix-2) {
-      height: 10rem; 
+      height: 12rem; 
     }
   }
 
@@ -18,7 +19,7 @@
     width: 100%;
 
     @include respond(mic-l) {
-     @include center-title; 
+    @include center-title; 
     }
 
     &__line {

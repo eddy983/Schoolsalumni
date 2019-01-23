@@ -67,6 +67,18 @@ $(function () {
   });
 });
       // ]]>
+// <![Profile[
+$(function () {
+  $(".box-font").each(function(i) {
+    len = $(this).text().length;
+    if (len > 20) {
+      $(this).text($(this)
+          .text()
+          .substr(0, 20) + "...");
+    }
+  });
+});
+      // ]]>
 
 //? To show charater limit in textarea
 var maxLength = 440;

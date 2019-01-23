@@ -172,8 +172,8 @@ body {
   font-weight: $bold;
 
   @include respond(4k-desk) {
-    font-size: 4rem;  
-  }   
+    font-size: 4rem;
+  }
 
   @include respond(tab-land) {
     font-size: 3rem;
@@ -184,7 +184,7 @@ body {
   font-size: $font-big;
 
   @include respond(4k-desk) {
-    font-size: 3.4rem; 
+    font-size: 3.4rem;
   }
 
   @include respond(tab-land) {
@@ -196,7 +196,7 @@ body {
     font-weight: $bold;
 
     @include respond(4k-desk) {
-      font-size: 5rem; 
+      font-size: 5rem;
     }
 
     @include respond(tab-land) {
@@ -239,7 +239,7 @@ body {
   font-size: $font-small;
 
   @include respond(4k-desk) {
-    font-size: 2.8rem;   
+    font-size: 2.8rem;
   }
 
   @include respond(tab-land) {
@@ -252,11 +252,28 @@ body {
 
   @include respond(mic-l) {
     font-size: 3rem;
+  }     
+}
+
+.box-font-title {
+  font-weight: $bold;
+  line-height: normal;
+  font-size: $font-small;
+
+  @include respond(4k-desk) {
+    font-size: 2.8rem;
   }
 
-  &-title {
-    font-weight: $bold;
-    line-height: normal;
+  @include respond(tab-land) {
+    font-size: $font-big;
+  }
+
+  @include respond(mic-l) {
+    font-size: 1.7rem;
+  }
+
+  @include respond(mic-l) {  
+    font-size: 3rem;
   }
 }
 
@@ -282,7 +299,7 @@ body {
   font-weight: $bold;
 
   @include respond(4k-desk) {
-    font-size: 3.2rem; 
+    font-size: 3.2rem;
   }
 
   @include respond(tab-land) {
@@ -313,7 +330,7 @@ body {
 
 .amount-font {
   @include respond(4k-desk) {
-    font-size: 3.2rem; 
+    font-size: 3.2rem;
   }
 
   @include respond(tab-land) {
@@ -486,9 +503,9 @@ body {
   }
 }
 
-.search-title {  
+.search-title {
   @include respond(4k-desk) {
-    font-size: 3.4rem; 
+    font-size: 3.4rem;
   }
 }
 
@@ -612,7 +629,7 @@ body {
   font-weight: $bold;
 
   @include respond(4k-desk) {
-    font-size: 3.8rem; 
+    font-size: 3.8rem;
   }
 
   @include respond(tab-land) {
@@ -629,14 +646,14 @@ body {
 }
 
 .profile-font {
-  display: inline;        
-             
+  display: inline;
+
   @include respond(4k-desk) {
     font-size: 3.4rem;
-    width: 28rem;  
+    width: 28rem;
   }
 
-  @include respond(tab-land) { 
+  @include respond(tab-land) {
     font-size: 3.8rem;
     width: 30rem;
   }
