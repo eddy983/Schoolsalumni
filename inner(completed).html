@@ -1,192 +1,261 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open Sans:100,300,400,500,600,700"
+      rel="stylesheet"
+    />
 
-  <!-- Font -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,700,900" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open Sans:100,300,400,500,600,700" rel="stylesheet">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="assets/css/main.css" />
 
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Favicon -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/Favicon.png"
+      type="image/x-icon"
+    />
 
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="assets/img/Favicon.png" type="image/x-icon" />
+    <title>Schoolsalumni</title>
+  </head>
 
-  <title>Schoolsalumni</title>
-</head>
-
-<body>
-
-  <!-- Respondsive Navigation -->
-  <div class="header__responsive-nav">
-    <!-- overlay -->
-    <div id="search">
-      <a href="#" id="close-btn">
-        <em class="fa fa-times"></em>
-      </a>
-      <input placeholder="type here" id="searchbox" type="search" />
-    </div>
-    <!--- /overlay -->
-    <nav class="nav">
-      <a href="#">
-        <img src="assets/img/menu.svg" alt="" class="nav__burger">
-      </a>
-      <input type="checkbox" class="nav__checkbox" id="navi-toggle">
-      <label for="navi-toggle" class="nav__button">Men</label>
-
-      <div class="nav__background">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="index.html" class="nav__bar__link nav-font">Home</a>
-          </li>
-          <li class="nav__item">
-            <a href="about-us.html" class="nav__bar__link nav-font">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="projects(all).html" class="nav__bar__link nav-font">Projects</a>
-          </li>
-          <li class="nav__item">
-            <a href="contact-us.html" class="nav__bar__link nav-font">Contact us</a>
-          </li>
-          <li class="nav__item">
-            <button class="btn btn__fund">Fund a project</button>
-          </li>
-          <li class="nav__item">
-            <button class="btn btn__nav" onclick="window.location.href='login.html'">Log in</button>
-          </li>
-        </ul>
+  <body>
+    <!-- Respondsive Navigation -->
+    <div class="header__responsive-nav">
+      <!-- overlay -->
+      <div id="search">
+        <a href="#" id="close-btn"> <em class="fa fa-times"></em> </a>
+        <input placeholder="type here" id="searchbox" type="search" />
       </div>
+      <!--- /overlay -->
+      <nav class="nav">
+        <a href="#">
+          <img src="assets/img/menu.svg" alt="" class="nav__burger" />
+        </a>
+        <input type="checkbox" class="nav__checkbox" id="navi-toggle" />
+        <label for="navi-toggle" class="nav__button">Men</label>
 
-      <!-- trigger search with a link to an anchor -->
-      <a class="fr nav__search-btn" href='#search'>
-        <em class="fa fa-search"></em>
-      </a>
-      <!-- /trigger search with a link to an anchor -->
+        <div class="nav__background">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="index.html" class="nav__bar__link nav-font">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="about-us.html" class="nav__bar__link nav-font">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="projects(all).html" class="nav__bar__link nav-font"
+                >Projects</a
+              >
+            </li>
+            <li class="nav__item">
+              <a href="contact-us.html" class="nav__bar__link nav-font"
+                >Contact us</a
+              >
+            </li>
+            <li class="nav__item">
+              <button class="btn btn__fund">Fund a project</button>
+            </li>
+            <li class="nav__item">
+              <button
+                class="btn btn__nav"
+                onclick="window.location.href='login.html'"
+              >
+                Log in
+              </button>
+            </li>
+          </ul>
+        </div>
 
+        <!-- trigger search with a link to an anchor -->
+        <a class="fr nav__search-btn" href="#search">
+          <em class="fa fa-search"></em>
+        </a>
+        <!-- /trigger search with a link to an anchor -->
+      </nav>
+    </div>
+
+    <nav class="nav__bar">
+      <ul class="nav__bar__items">
+        <li class="nav__bar__item">
+          <a href="index.html" class="nav__bar__link nav-font"> Home </a>
+          <div class="nav__bar__link__line"></div>
+        </li>
+        <li class="nav__bar__item">
+          <a href="about-us.html" class="nav__bar__link nav-font"> About </a>
+          <div class="nav__bar__link__line"></div>
+        </li>
+        <li class="nav__bar__item">
+          <a href="projects(all).html" class="nav__bar__link nav-font active">
+            Projects
+          </a>
+          <div class="nav__bar__link__line"></div>
+        </li>
+        <li class="nav__bar__item">
+          <a href="contact-us.html" class="nav__bar__link nav-font">
+            Contact us
+          </a>
+          <div class="nav__bar__link__line"></div>
+        </li>
+        <li class="nav__bar__item">
+          <button
+            onclick="window.location.href='search.html'"
+            class="btn btn__fund"
+          >
+            Fund a project
+          </button>
+        </li>
+        <li class="nav__bar__item">
+          <button
+            onclick="window.location.href='login.html'"
+            class="btn btn__nav"
+          >
+            Log in
+          </button>
+        </li>
       </ul>
     </nav>
-  </div>
 
-  <nav class="nav__bar">
-    <ul class="nav__bar__items">
-      <li class="nav__bar__item">
-        <a href="index.html" class="nav__bar__link nav-font">
-          Home
-        </a>
-        <div class="nav__bar__link__line"></div>
-      </li>
-      <li class="nav__bar__item">
-        <a href="about-us.html" class="nav__bar__link nav-font">
-          About
-        </a>
-        <div class="nav__bar__link__line"></div>
-      </li>
-      <li class="nav__bar__item">
-        <a href="projects(all).html" class="nav__bar__link nav-font active">
-          Projects
-        </a>
-        <div class="nav__bar__link__line"></div>
-      </li>
-      <li class="nav__bar__item">
-        <a href="contact-us.html" class="nav__bar__link nav-font">
-          Contact us
-        </a>
-        <div class="nav__bar__link__line"></div>
-      </li>
-      <li class="nav__bar__item">
-        <button onclick="window.location.href='search.html'" class="btn btn__fund">Fund a project</button>
-      </li>
-      <li class="nav__bar__item">
-        <button onclick="window.location.href='login.html'" class="btn btn__nav">Log in</button>
-      </li>
-    </ul>
-  </nav>
-
-  <section class="inner">
-   <div class="inner__title">
-     <p class="inner-title">Project Title</p>
-     <p class="inner-sub-margin inner-title inner-title-sub">(completed)</p>
-     <img src="assets/img/Completed.svg" alt="icon" class="inner__icon">
-   </div>
-   <img srcset="assets/img/Banner2_0.jpg 1x, assets/img/Banner2.jpg 2x" alt="Project Image" class="inner__image">
-   <div class="inner__info">
-     <p class="inner-font inner-font-title">Beneficiary School</p>
-     <p class="inner-font">Ruby Springfield College</p>
-   </div>
-   <div class="inner__info">
-     <p class="inner-font inner-font-title">Location</p>
-     <p class="inner-font">Old GRA Maiduguri, Borno state.</p>
-   </div>
-   <div class="inner__info">
-     <p class="inner-font inner-font-title">Project Description</p>
-     <p class="inner-font">
-      Ruby Springfield College is a private school, having both its primary and secondary in the Maiduguri, the capital of
-      Borno state, Northern Nigeria. She was opened on 1st May, 1993. She has graduated a total of 25 sets since then. She
-      has dire need for state of the art chemical and computer laboratories. The school
-     </p>
-   </div>
-   <div class="inner__info">
-     <p class="inner-font inner-font-title">Amount Donated</p>
-     <p class="inner-font">000,000,000</p>
-   </div>
-
-   <div class="center-text">
-     <p class="gallery-margin gallery-title">Gallery</p>
-   </div>
-
-   <div class="inner__gallery">
-     <div class="inner__gallery__box">
-       <img src="assets/img/grey-color.jpg" alt="Gallery Image" class="inner__gallery__image">
-     </div>
-     <div class="inner__gallery__box">
-       <img src="assets/img/grey-color.jpg" alt="Gallery Image" class="inner__gallery__image">
-     </div>
-     <div class="inner__gallery__box">
-       <img src="assets/img/grey-color.jpg" alt="Gallery Image" class="inner__gallery__image">
-     </div>
-     <div class="inner__gallery__box">
-       <img src="assets/img/grey-color.jpg" alt="Gallery Image" class="inner__gallery__image">
-     </div>
-   </div>
-
-   <button class="btn btn__gallery">Next Project <i class="fas fa-arrow-right"></i></button>
-
-  </section>
-
-  <footer class="footer">
-    <div class="center-text">
-      <p class="footer-font">Connect with Us</p>
-      <div class="footer__icons">
-        <img src="assets/img/facebook-logo.svg" alt="Social Media" class="footer__icons__icon">
-        <img src="assets/img/twitter-social-logotype.svg" alt="Social Media" class="footer__icons__icon">
-        <img src="assets/img/instagram.svg" alt="Social Media" class="footer__icons__icon">
-        <img src="assets/img/linkedin-logo.svg" alt="Social Media" class="footer__icons__icon">
+    <section class="inner">
+      <div class="inner__title">
+        <p class="inner-title">Project Title</p>
+        <p class="inner-sub-margin inner-title inner-title-sub">(completed)</p>
+        <img src="assets/img/Completed.svg" alt="icon" class="inner__icon" />
       </div>
-      <p class="footer-font footer-font-copyright">
-        <span><i class="fa fa-phone footer__contact"></i>+2349064519745</span>
-        <i class="fa fa-envelope footer__contact"></i>brownson121@gmail.com</span>
-      </p>
-      <p class="footer-font footer-font-copyright">Copyright
-        <span class="copyright-margin footer-font footer-font-copyright footer-font-copyright-icon">&copy;</span> 2018
-        Schoolsalumni,All
-        rights resevered.
-      </p>
-    </div>
-  </footer>
+      <img
+        srcset="assets/img/Banner2_0.jpg 1x, assets/img/Banner2.jpg 2x"
+        alt="Project Image"
+        class="inner__image"
+      />
+      <div class="inner__info">
+        <p class="inner-font inner-font-title">Beneficiary School</p>
+        <p class="inner-font">Ruby Springfield College</p>
+      </div>
+      <div class="inner__info">
+        <p class="inner-font inner-font-title">Location</p>
+        <p class="inner-font">Old GRA Maiduguri, Borno state.</p>
+      </div>
+      <div class="inner__info">
+        <p class="inner-font inner-font-title">Project Description</p>
+        <p class="inner-font">
+          Ruby Springfield College is a private school, having both its primary
+          and secondary in the Maiduguri, the capital of Borno state, Northern
+          Nigeria. She was opened on 1st May, 1993. She has graduated a total of
+          25 sets since then. She has dire need for state of the art chemical
+          and computer laboratories. The school
+        </p>
+      </div>
+      <div class="inner__info">
+        <p class="inner-font inner-font-title">Amount Donated</p>
+        <p class="inner-font">000,000,000</p>
+      </div>
 
+      <div class="center-text">
+        <p class="gallery-margin gallery-title">Gallery</p>
+      </div>
 
+      <div class="inner__gallery">
+        <div class="inner__gallery__box">
+          <img
+            src="assets/img/grey-color.jpg"
+            alt="Gallery Image"
+            class="inner__gallery__image"
+          />
+        </div>
+        <div class="inner__gallery__box">
+          <img
+            src="assets/img/grey-color.jpg"
+            alt="Gallery Image"
+            class="inner__gallery__image"
+          />
+        </div>
+        <div class="inner__gallery__box">
+          <img
+            src="assets/img/grey-color.jpg"
+            alt="Gallery Image"
+            class="inner__gallery__image"
+          />
+        </div>
+        <div class="inner__gallery__box">
+          <img
+            src="assets/img/grey-color.jpg"
+            alt="Gallery Image"
+            class="inner__gallery__image"
+          />
+        </div>
+      </div>
 
-  <!-- Scripts -->
+      <button class="btn btn__gallery">
+        Next Project <i class="fas fa-arrow-right"></i>
+      </button>
+    </section>
 
-  <script src="assets/plug-ins/js/fontawesome/all.js"></script>
+    <footer class="footer">
+      <div class="center-text">
+        <p class="footer-font">Connect with Us</p>
+        <div class="footer__icons">
+          <a
+            href="http://fb.me/Schoolsalumni.xyz"
+            target="_blank"
+            class="footer__icons__icon"
+          >
+            <img src="assets/img/facebook-logo.svg" alt="Social Media" />
+          </a>
+          <a
+            href="https://twitter.com/search?q=schoolsalumni&src=typd"
+            target="_blank"
+            class="footer__icons__icon"
+          >
+            <img
+              src="assets/img/twitter-social-logotype.svg"
+              alt="Social Media"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/schoolsalumni/?hl=en"
+            target="_blank"
+            class="footer__icons__icon"
+          >
+            <img src="assets/img/instagram.svg" alt="Social Media" />
+          </a>
+          <a
+            href="https://www.linkedin.com/company/schoolsalumni/about/"
+            target="_blank"
+            class="footer__icons__icon"
+          >
+            <img src="assets/img/linkedin-logo.svg" alt="Social Media" />
+          </a>
+        </div>
+        <p class="footer-font footer-font-copyright">
+          <i class="fa fa-phone footer__contact"></i>+2349064519745
+          <i class="fa fa-envelope footer__contact"></i>brownson121@gmail.com
+        </p>
+        <p class="footer-font footer-font-copyright">
+          Copyright
+          <span
+            class="copyright-margin footer-font footer-font-copyright footer-font-copyright-icon"
+            >&copy;</span
+          >
+          2018 schoolalumni,All rights resevered.
+        </p>
+      </div>
+    </footer>
 
- <script src="assets/js/jquery.min.js"></script>
+    <!-- Scripts -->
 
-  <script src="assets/js/index.js"></script>
-</body>
+    <script src="assets/plug-ins/js/fontawesome/all.js"></script>
 
+    <script src="assets/js/jquery.min.js"></script>
+
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>
