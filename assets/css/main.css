@@ -1415,6 +1415,53 @@ body {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
   max-height: 400px; }
 
+/** page **/
+.cssloader {
+  display: none;
+  padding-top: calc(45vh - 30.5rem);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+/** loader **/
+.sh1 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 6rem 6rem 0 0;
+  border-color: #006DFF transparent transparent transparent;
+  margin: 0 auto;
+  animation: shk1 1s ease-in-out infinite normal; }
+
+.sh2 {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 6rem 6rem;
+  border-color: transparent transparent #E4AE48 transparent;
+  margin: -6rem auto 0;
+  animation: shk2 1s ease-in-out infinite alternate; }
+
+/** animation starts here **/
+@keyframes shk1 {
+  0% {
+    transform: rotate(-360deg); }
+  100% { } }
+
+@keyframes shk2 {
+  0% {
+    transform: rotate(360deg); }
+  100% { } }
+
+.lt {
+  color: #488BE4;
+  font-size: 2.5rem;
+  margin: 3rem auto;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1.1rem; }
+
 .nav__bar {
   display: -webkit-box;
   display: -moz-box;
