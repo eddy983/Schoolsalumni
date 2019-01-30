@@ -26,15 +26,6 @@ $(document).ready(function() {
   });
 });
 
-// LOADER
-$(window).load(function () {
-  $(".cssloader").fadeOut("slow", function () {
-    $(this).remove();
-  });  
-});
-
-
-
 //? For charater limit
 // <![Description[
 $(function () {
