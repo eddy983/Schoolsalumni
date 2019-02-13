@@ -1,5 +1,9 @@
 .project {
-  @include margin;   
+  @include margin; 
+  
+  &__log-in {
+    margin: 0 36%; 
+  }
   
   &__logo {
     @include logo-margin;   
@@ -78,7 +82,11 @@
 
     &__password {
       width: 50%;
-      
+
+      &--2 {
+        width: 100%;  
+      }
+    
       @include respond(mic-l) {
         width: 100%; 
       }
@@ -188,6 +196,10 @@
 
   &__password {
     margin-top: 3%; 
+
+    &--2{
+      margin-top: 6%; 
+    }
 
     @include respond(tab-land){
       margin-top: 6%;

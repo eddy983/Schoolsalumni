@@ -106,21 +106,24 @@
     </ul>
   </nav>
 
-  <section class="project">
+  <section class="project project__log-in">
     <div class="project__logo">      
       <img src="assets/img/Logo.png" alt="Logo" class="product__logo" />
     </div>
 
     <div class="project__account">
-      <p class="acct-font-title">Login</p>
-      <p class="acct-font">Welcome back!</p>
-      <div class="project__password">
-        <p class="password-font">Email</p>
-        <input type="email" name="email" class="project__input project__input__password">
+      <div class="center-text">
+        <p class="acct-font-title">Login</p>
+        <p class="acct-font">Welcome back!</p>
       </div>
-      <div class="project__password">
+      
+      <div class="project__password project__password--2">
+        <p class="password-font">Email</p>
+        <input type="email" name="email" class="project__input project__input__password project__input__password--2">
+      </div>
+      <div class="project__password project__password--2">
         <p class="password-font">Password</p>
-        <input type="password" name="password" class="project__input project__input__password">
+        <input type="password" name="password" class="project__input project__input__password project__input__password--2">
       </div>
       <button class="btn btn__create" onclick="window.location.href='dashboard.html'">Log In</button>
     </div>

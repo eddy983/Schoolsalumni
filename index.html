@@ -46,13 +46,13 @@
         <div class="nav__background">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="index.html" class="nav__bar__link nav-font">Home</a>
+              <a href="#" class="nav__bar__link nav-font">Home</a>
             </li>
             <li class="nav__item">
-              <a href="about-us.html" class="nav__bar__link nav-font">About</a>
+              <a href="#" class="nav__bar__link nav-font">About</a>
             </li>
             <li class="nav__item">
-              <a href="projects(all).html" class="nav__bar__link nav-font"
+              <a href="#" class="nav__bar__link nav-font"
                 >Projects</a
               >
             </li>
@@ -81,7 +81,7 @@
     <nav class="nav__bar nav__bar--land">
       <ul class="nav__bar__items">
         <li class="nav__bar__item">
-          <a href="index.html" class="nav__bar__link nav-font active"> Home </a>
+          <a href="#" class="nav__bar__link nav-font active"> Home </a>
           <div class="nav__bar__link__line"></div>
         </li>
         <li class="nav__bar__item">
@@ -289,6 +289,17 @@
     <script src="assets/js/jquery.min.js"></script>
 
     <script src="assets/js/index.js"></script>
+
+    <script>
+      $(document).ready(function () {
+          $(".nav__bar__link").click(function () {
+            if (!$(this).hasClass('active')) {
+              $(".nav__bar__link.active").removeClass("active");
+              $(this).addClass("active");
+            }
+          });
+        });
+    </script>
 
   </body>
 </html>
